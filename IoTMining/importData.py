@@ -5,16 +5,16 @@ import os
 import re
 from collections import Counter
 from datetime import datetime
-
+import utils
 import numpy as np
 from keras.preprocessing import sequence
 
 offset = 20
 max_lenght = 2000
 
+
 datasets = ["./dataset/datatest"]
 datasetsNames = [i.split('/')[-1] for i in datasets]
-
 
 def load_dataset(filename):
     dataTable = []
@@ -29,6 +29,8 @@ def load_dataset(filename):
             sensor = None
             value = None
             activity = None
+            dayOfWeek = None
+            partitionTimeOfDay = None
             try:
                 if 'M' == lineList[2][0] or 'L' == lineList[2][0]:
                     # choose only M, L sensors
@@ -36,6 +38,9 @@ def load_dataset(filename):
                         lineList[1] = lineList[1] + '.000000'
                     timestamp = (datetime.strptime(str(np.array(lineList[0])) + str(np.array(lineList[1])),
                                                         "%Y-%m-%d%H:%M:%S.%f"))
+                    dayOfWeek = timestamp.weekday()
+                    partitionTimeOfDay = utils.timeInPartition(timestamp.hour)
+                    
                     sensor = (str(np.array(lineList[2])))
                     value = (str(np.array(lineList[3])))
 
@@ -50,7 +55,12 @@ def load_dataset(filename):
                         if 'end' in activity:
                             if activity[-1] == ' ':  # if white space at the end
                                 activity = activity[:-1]  # delete white space
-                    dataTable.append([timestamp, sensor, value, activity])
+                    dataTable.append([timestamp,
+                                      dayOfWeek, 
+                                      partitionTimeOfDay,
+                                      sensor,
+                                      value,
+                                      activity])
             except IndexError:
                 print(i, line)
 
