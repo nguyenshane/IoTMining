@@ -2,16 +2,9 @@
 
 import datetime
 import os
-import re
-from collections import Counter
 from datetime import datetime
 import utils
 import numpy as np
-from keras.preprocessing import sequence
-
-offset = 20
-max_lenght = 2000
-
 
 datasets = ["./dataset/datatest"]
 datasetsNames = [i.split('/')[-1] for i in datasets]
@@ -76,28 +69,12 @@ if __name__ == '__main__':
         print('Loading ' + datasetName + ' dataset ...')
         dataTable = load_dataset(filename)
 
-        # X, Y, dictActivities = convertActivities(X, Y,
-        #                                          dictActivities,
-        #                                          mappingActivities[datasetName],
-        #                                          cookActivities[datasetName])
-
-        # print(sorted(dictActivities, key=dictActivities.get))
-        # print("n° instances post-filtering:\t" + str(len(X)))
-
-        # print(Counter(Y))
-
-        # X = np.array(X, dtype=object)
-        # Y = np.array(Y, dtype=object)
-
-        # X = sequence.pad_sequences(X, maxlen=max_lenght, dtype='int32')
-
         dataTable = np.array(dataTable, dtype=object)
         if not os.path.exists('npy'):
             os.makedirs('npy')
 
         np.save('./npy/' + datasetName + 'npy', dataTable)
-        # np.save('./npy/' + datasetName + '-y.npy', Y)
-        # np.save('./npy/' + datasetName + '-labels.npy', dictActivities)
+        print('Saved ' + datasetName)
 
 
 def getData(datasetName):
