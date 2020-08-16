@@ -2,8 +2,9 @@
 
 import datetime
 import os
-from datetime import datetime
 import utils
+from datetime import datetime
+from utils import sensorFilter
 import numpy as np
 
 datasets = ["./dataset/datatest"]
@@ -27,6 +28,9 @@ def load_dataset(filename):
             try:
                 if 'M' == lineList[2][0] or 'L' == lineList[2][0]:
                     # choose only M, L sensors
+                    sensor = sensorFilter(str(np.array(lineList[2]))) #map sensors ID to each group primary ID
+
+                    
                     if not ('.' in str(np.array(lineList[0])) + str(np.array(lineList[1]))):
                         lineList[1] = lineList[1] + '.000000'
                     timestamp = (datetime.strptime(str(np.array(lineList[0])) + str(np.array(lineList[1])),
@@ -34,7 +38,6 @@ def load_dataset(filename):
                     dayOfWeek = timestamp.weekday()
                     partitionTimeOfDay = utils.timeInPartition(timestamp.hour)
                     
-                    sensor = (str(np.array(lineList[2])))
                     value = (str(np.array(lineList[3])))
 
                     if len(lineList) == 4:  # if activity does not exist
