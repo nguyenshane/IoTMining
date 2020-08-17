@@ -41,7 +41,7 @@ R2roomSensorSet =    ("M030",
                       "M036")
 
 
-upstairsHallSensorSet =   ("M027",
+upstairsHallSensorSet =    ("M027",
                             "M028",
                             "M029")
 
@@ -63,9 +63,6 @@ bathroomSensorSet =   ("M037",
                        "M040",
                        "M041")
 
-
-
-
 sensorGroupList = [  LivingRoomSensorSet,
                      R1roomSensorSet,
                      R2roomSensorSet,
@@ -73,9 +70,6 @@ sensorGroupList = [  LivingRoomSensorSet,
                      downstairsHallSensorSet,
                      kitchenSensorSet,
                      bathroomSensorSet]
-
-
-
 
 """
 Function sensorFilter
@@ -103,3 +97,11 @@ def timeInPartition(x):
         if (timeInRange(timePartitionMap[key]["start"],
             timePartitionMap[key]["end"], x)):
             return int(key)
+
+def timeStampDiff (timeStamp1, timeStamp2):
+    """ Return the absolute different between two timeStamps"""
+    #a timeStamp has this format HH:MM:SS:mmmmmmm
+    time1 = timeStamp1.split(':')
+    time2 = timeStamp2.split(':')
+    return abs((int(time1[0])*60 + int(time1[1])) - (int(time2[0])*60 + int(time2[1])))
+
