@@ -1,8 +1,21 @@
 # -*- coding: utf-8 -*-
 
+timePruningThreshold = 15
+
 timePartitionMap = {"0": {"start": 6, "end": 11}, # Morning
                     "1": {"start": 12, "end": 19}, # Afternoon
                     "2": {"start": 20, "end": 5}} # Everning
+
+lightningMap = {"L001" : "R1room_Light",
+                "L002" : "R3room_Light",
+                "L003" : "uHall_Light",
+                "L004" : "R2room_Light",
+                "L005" : "BA_sink_Light",
+                "L006" : "BA_tub_Light",
+                "L007" : "BA_fan",
+                "L008" : "Liv_Light",
+                "L009" : "dHall_Light",
+                "L010" : "Kitchen_Light"}
 
 """
 Organizing sensors IDs into sets.
@@ -41,7 +54,7 @@ R2roomSensorSet =    ("M030",
                       "M036")
 
 
-upstairsHallSensorSet =   ("M027",
+upstairsHallSensorSet =    ("M027",
                             "M028",
                             "M029")
 
@@ -64,7 +77,23 @@ bathroomSensorSet =   ("M037",
                        "M041")
 
 
-
+labelSet = ("LivRoom",
+            "R1room",
+            "R2room",
+            "UpstairsHall",
+            "DownstairsHall",
+            "Kitchen",
+            "Bathroom",
+            "R1room_Light",
+            "R3room_Light",
+            "uHall_Light",
+            "R2room_Light",
+            "BA_sink_Light",
+            "BA_tub_Light",
+            "BA_fan",
+            "Liv_Light",
+            "dHall_Light",
+            "Kitchen_Light")
 
 sensorGroupList = [  LivingRoomSensorSet,
                      R1roomSensorSet,
@@ -85,7 +114,9 @@ primary ID for each group is the frist element of that group
 def sensorFilter(sensorID):
     for element in sensorGroupList:
             if (element.count(sensorID) > 0):
-                return element[0]
+                return labelSet[sensorGroupList.index(element)]
+    if sensorID in lightningMap.keys():
+        return lightningMap.get(sensorID)
     return None #return None if not found in the group list
 
 
@@ -103,3 +134,10 @@ def timeInPartition(x):
         if (timeInRange(timePartitionMap[key]["start"],
             timePartitionMap[key]["end"], x)):
             return int(key)
+        
+def timeStampDiff (timeStamp1, timeStamp2):
+    """ Return the absolute different between two timeStamps"""
+    #a timeStamp has this format HH:MM:SS:mmmmmmm
+    time1 = timeStamp1.split(':')
+    time2 = timeStamp2.split(':')
+    return abs((float(time1[0])*60 + float(time1[1]) + float(time1[2])*(1/60)) - (float(time2[0])*60 + float(time2[1]) + float(time2[2])*(1/60)))
