@@ -95,6 +95,12 @@ labelSet = ("LivRoom",
             "dHall_Light",
             "Kitchen_Light")
 
+labelTestSet = ("Kitchen_Light",
+                "R1room",
+                "R2room",
+                "Liv_Light",
+                "dHall_Light")
+
 sensorGroupList = [  LivingRoomSensorSet,
                      R1roomSensorSet,
                      R2roomSensorSet,
