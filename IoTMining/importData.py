@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 
-import datetime
 import os
 import utils
-from datetime import datetime
+from datetime import datetime, time, timedelta
 from utils import sensorFilter
 import numpy as np
 
-datasets = ["./dataset/datatest"]
+datasets = ["./dataset/data"]
 datasetsNames = [i.split('/')[-1] for i in datasets]
 
-def load_dataset(filename):
+def loadDataset(filename):
     dataTable = []
     with open(filename, 'rb') as features:
         database = features.readlines()
@@ -66,24 +65,47 @@ def load_dataset(filename):
     features.close()
    
     return dataTable
-
-
-if __name__ == '__main__':
-    for filename in datasets:
-        datasetName = filename.split("/")[-1]
-        print('Loading ' + datasetName + ' dataset ...')
-        dataTable = load_dataset(filename)
-
-        dataTable = np.array(dataTable, dtype=object)
+    
+def partitionDataByWeek(path):
+    dataTable = np.load(path, allow_pickle=True)
+    startDate = datetime.combine(dataTable[0][:1][0].date(), time(0))
+    finalDate = datetime.combine(dataTable[dataTable.shape[0]-1][:1][0].date() 
+                                 + timedelta(days=1), time(0))
+    
+    currentWeek = 0
+    
+    while True:
+        nextEndDate = startDate + timedelta(days=7)
+        idx = ((dataTable[:, 0] >= startDate)
+            & (dataTable[:, 0] < nextEndDate)
+            & (dataTable[:, 0] < finalDate))
+        
         if not os.path.exists('npy'):
             os.makedirs('npy')
+        
+        np.save('./npy/dataByWeek/week' + str(currentWeek), dataTable[idx])
+        print('Saved ./npy/dataByWeek/week' + str(currentWeek))
 
-        np.save('./npy/' + datasetName + 'npy', dataTable)
-        print('Saved ' + datasetName)
+        if (nextEndDate >= finalDate):
+            break
+        else:
+            startDate = nextEndDate
+            currentWeek += 1
 
+if __name__ == '__main__':
 
-def getData(datasetName):
-    X = np.load('./npy/' + datasetName + '-x.npy')
-    Y = np.load('./npy/' + datasetName + '-y.npy')
-    dictActivities = np.load('./npy/' + datasetName + '-labels.npy').item()
-    return X, Y, dictActivities
+    if not os.path.exists('npy/datanpy.npy'):
+        # Generate the full dataset
+        for filename in datasets:
+            datasetName = filename.split("/")[-1]
+            print('Loading ' + datasetName + ' dataset ...')
+            dataTable = loadDataset(filename)
+
+            dataTable = np.array(dataTable, dtype=object)
+            if not os.path.exists('npy'):
+                os.makedirs('npy')
+
+            np.save('./npy/' + datasetName + 'npy', dataTable)
+            print('Saved ' + datasetName)
+    # Partition full dataset to week
+    partitionDataByWeek('npy/datanpy.npy')

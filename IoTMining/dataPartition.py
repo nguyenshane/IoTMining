@@ -38,7 +38,7 @@ def dataPartition(filename):
                 exportTable.append(dataTable[row])
         
         exportTable = np.array(exportTable, dtype=object)
-        np.save('/Users/Tommy/coen281projdata/dataByWeek/week' + str(weekIndex), exportTable)
+        np.save('./npy/dataByWeek/week' + str(weekIndex), exportTable)
         print('Saved week ' + str(weekIndex))
         dateTup = updateDates(startDate, endDate)
         startDate = dateTup[0]
@@ -55,8 +55,8 @@ if __name__ == '__main__':
        
     filename = "./npy/datanpy.npy"
     dataName = filename.split("/")[-1]
-    if not os.path.exists('npy/dataByWeek/'):
-            os.makedirs('npy/dataByWeek')
+    if not os.path.exists('./npy/dataByWeek/'):
+            os.makedirs('./npy/dataByWeek')
     print("Partitioning " + dataName + "...")
     dataPartition(filename)
     print("Done")
