@@ -28,8 +28,10 @@ def load_dataset(filename):
             try:
                 if 'M' == lineList[2][0] or 'L' == lineList[2][0]:
                     # choose only M, L sensors
-                    sensor = sensorFilter(str(np.array(lineList[2]))) #map sensors ID to each group primary ID
-
+                    sensor = sensorFilter(str(np.array(lineList[2])))
+                    
+                    if (None == sensor):
+                        continue
                     
                     if not ('.' in str(np.array(lineList[0])) + str(np.array(lineList[1]))):
                         lineList[1] = lineList[1] + '.000000'
