@@ -95,6 +95,27 @@ labelSet = ("LivRoom",
             "dHall_Light",
             "Kitchen_Light")
 
+labelTestSet = ("Kitchen_Light",
+                "R1room",
+                "R2room",
+                "Liv_Light",
+                "dHall_Light")
+
+basketsKeySet = ("00", "01", "02", 
+
+                 "10", "11", "12", 
+
+                 "20", "21", "22", 
+
+                 "30", "31", "32", 
+
+                 "40", "41", "42", 
+
+                 "50", "51", "52", 
+
+                 "60", "61", "62")
+                
+
 sensorGroupList = [  LivingRoomSensorSet,
                      R1roomSensorSet,
                      R2roomSensorSet,
