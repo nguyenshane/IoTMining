@@ -65,6 +65,6 @@ if __name__ == '__main__':
 
 
 #quick test here 
-#print("Start date: " + startDate)
-#print("End date: " + getEndDate(startDate))
-#print("next week: " + str(updateDates(startDate,getEndDate(startDate))))
+#print("Start date: " + utils.startDate)
+#print("End date: " + getEndDate(utils.startDate))
+#print("next week: " + str(updateDates(utils.startDate,getEndDate(utils.startDate))))

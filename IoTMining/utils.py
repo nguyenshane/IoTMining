@@ -2,6 +2,9 @@
 
 timePruningThreshold = 15
 
+startDate = "2009-08-24"
+endDate = "2010-05-01"
+
 timePartitionMap = {"0": {"start": 6, "end": 11}, # Morning
                     "1": {"start": 12, "end": 19}, # Afternoon
                     "2": {"start": 20, "end": 5}} # Everning
