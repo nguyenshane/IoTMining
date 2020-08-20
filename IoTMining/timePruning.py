@@ -6,14 +6,9 @@ Created on Mon Aug 17 13:35:15 2020
 @author: QB
 """
 
-
-from utils import labelSet
-from utils import timeStampDiff
-from utils import timePruningThreshold
-from utils import basketsKeySet
+from utils import labelSet, timeStampDiff, timePruningThreshold, basketsKeySet
 from collections import defaultdict
 import numpy as np
-
 
 filename = "./npy/datatestnpy.npy"
 
@@ -66,8 +61,5 @@ def timePruning(filename):
     return routineItemsMap
 
 # un-comment the line below to test output
+#filename = "./npy/datatestnpy.npy"
 #print(timePruning(filename))
-
-
-
-
