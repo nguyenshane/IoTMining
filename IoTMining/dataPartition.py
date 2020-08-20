@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
 
 
-#test here 
+#quick test here 
 #print("Start date: " + startDate)
 #print("End date: " + getEndDate(startDate))
 #print("next week: " + str(updateDates(startDate,getEndDate(startDate))))
