@@ -5,6 +5,7 @@ import utils
 from datetime import datetime, time, timedelta
 from utils import sensorFilter
 import numpy as np
+from preProcessing import preProcessing
 
 datasets = ["./dataset/data"]
 datasetsNames = [i.split('/')[-1] for i in datasets]
@@ -85,6 +86,9 @@ def partitionDataByWeek(path):
         
         np.save('./npy/dataByWeek/week' + str(currentWeek), dataTable[idx])
         print('Saved ./npy/dataByWeek/week' + str(currentWeek))
+        
+        if (len(dataTable[idx]) > 0):
+            preProcessing(currentWeek, dataTable[idx])
 
         if (nextEndDate >= finalDate):
             break
