@@ -30,7 +30,7 @@ def loadDataset(filename):
                     # choose only M, L sensors
                     sensor = sensorFilter(str(np.array(lineList[2])))
                     
-                    if (None == sensor):
+                    if (sensor is None):
                         continue
                     
                     if not ('.' in str(np.array(lineList[0])) + str(np.array(lineList[1]))):

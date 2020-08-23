@@ -9,9 +9,9 @@ from numpy.core.defchararray import find
 
 
 def preProcessing(week, dataTable):
-    #if (dataTable == None):
-    #    filename = "./npy/dataByWeek/week" + str(week) + ".npy"
-    #    dataTable = np.load(filename, allow_pickle = True)
+    if (dataTable is None):
+        filename = "./npy/dataByWeek/week" + str(week) + ".npy"
+        dataTable = np.load(filename, allow_pickle = True)
     
     prunedDataTable = []
     startTime = dataTable[0][:1][0]
@@ -30,7 +30,7 @@ def preProcessing(week, dataTable):
         dataTableIndex += len(currentSegment) - 1
         #print('segment', currentSegment, segmentCount)
         
-        prunedSegment = pruneByDevice(currentSegment)
+        prunedSegment = pruneByDevice(currentSegment, segmentCount)
         
         if (len(prunedSegment) > 0):
             prunedDataTable.extend(prunedSegment)
@@ -55,14 +55,25 @@ def preProcessing(week, dataTable):
             
     return
 
-def pruneByDevice(segment):    
+def pruneByDevice(segment, segmentCount):    
     deviceList = segment[:, 3]
     for index, device in enumerate(deviceList):
         if (device != None):
             if ('Light' in device) or ('fan' in device):
+                segment = pruneDuplication(segment)
+                newCol = np.full((1, len(segment)), segmentCount)
+                segment = np.insert(segment, 3, newCol,  axis=1)
                 return segment.tolist()
     
     return []
+
+def pruneDuplication(segment):
+    onIdx = (segment[:, 4] == "ON")
+    onSegment = segment[onIdx]
+    uniqueKeys, indices = np.unique(onSegment[:, 3], return_index=True)
+    
+    newSegment = onSegment[indices]
+    return newSegment
         
     
-#preProcessing(12, None)
+# preProcessing(11, None)
