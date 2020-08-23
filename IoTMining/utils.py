@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-timePruningThreshold = 15
+timePruningThreshold = 1
 
 startDate = "2009-08-24"
 endDate = "2010-05-01"
