@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-timePruningThreshold = 1
+timePruningThreshold = 3 # time threshold in minute
 
-startDate = "2009-08-24"
+startDate = "2009-08-24" # start and end date got from the study 
 endDate = "2010-05-01"
 
 timePartitionMap = {"0": {"start": 6, "end": 11}, # Morning

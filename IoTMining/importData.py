@@ -81,8 +81,8 @@ def partitionDataByWeek(path):
             & (dataTable[:, 0] < nextEndDate)
             & (dataTable[:, 0] < finalDate))
         
-        if not os.path.exists('npy'):
-            os.makedirs('npy')
+        if not os.path.exists('./npy/dataByWeek/'):
+            os.makedirs('./npy/dataByWeekNoFilter/')
         
         np.save('./npy/dataByWeek/week' + str(currentWeek), dataTable[idx])
         print('Saved ./npy/dataByWeek/week' + str(currentWeek))
