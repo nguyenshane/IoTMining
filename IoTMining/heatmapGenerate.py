@@ -38,11 +38,13 @@ def transparent_cmap(cmap, N=255):
 
 if __name__ == "__main__":
     
-    dataTable = np.load('./npy/dataByWeekNoFilter/week3.npy', allow_pickle=True)
+    dataTable = np.load('./npy/dataByWeekNoFilter/week0.npy', allow_pickle=True)
     sensorArr = dataTable[:,3]
     unique, counts = np.unique(sensorArr, return_counts=True)
     countDict = dict(zip(unique, counts))
-    maxCount = max(countDict.values())
+    
+    if bool(countDict):
+        maxCount = max(countDict.values())
     
     locationDict = {}
     filename = "./sensorLocation.txt"
@@ -72,10 +74,11 @@ if __name__ == "__main__":
     for key in locationDict:
         if key in countDict.keys(): 
             Gauss = twoD_Gaussian(x, y, locationDict[key][0] *x.max(), locationDict[key][1] *y.max(), .08*x.max(), .08*y.max())
-            value = int(((countDict[key])/maxCount)*200)
             if str(key)[0] == "M":
-                 cb = ax.contourf(x, y, Gauss.reshape(x.shape[0], y.shape[1]), value , cmap=redcmap)
+                value = int(((countDict[key])/maxCount)*200)
+                cb = ax.contourf(x, y, Gauss.reshape(x.shape[0], y.shape[1]), value , cmap=redcmap)
             else:
+                value = int(((countDict[key]*101)/maxCount)*100)
                 cb = ax.contourf(x, y, Gauss.reshape(x.shape[0], y.shape[1]),  value , cmap=bluecmap)
 
                 
