@@ -6,13 +6,13 @@ Created on Mon Aug 17 13:35:15 2020
 @author: QB
 """
 
-from utils import labelSet, timeStampDiff, durationThreshold, basketsKeySet
+from utils import labelSet, timeStampDiff, timePruningThreshold, basketsKeySet
 from collections import defaultdict
 import numpy as np
 
 filename = "./npy/datatestnpy.npy"
 
-def durationPruning(filename):
+def timePruning(filename):
     """Return a map of routine items i.e. a baskets for A-priori"""
     """keys of the map are the combinations of dayOfWeek + partitionTimeOfDay i.e. 00, 01, 02...62 """
     # an item is routine if its duration is longer then the time pruning threshold
@@ -54,7 +54,7 @@ def durationPruning(filename):
                         totalDuration += timeStampDiff(timeStampList[0],timeStampList[1])
                         timeStampList.clear()
         
-            if totalDuration > durationThreshold : #time pruning
+            if totalDuration > timePruningThreshold : #time pruning
                 routineItems.append(elem)
                 
         routineItemsMap[key].append(routineItems)
@@ -62,4 +62,4 @@ def durationPruning(filename):
 
 # un-comment the line below to test output
 #filename = "./npy/datatestnpy.npy"
-#print(durationPruning(filename))
+#print(timePruning(filename))

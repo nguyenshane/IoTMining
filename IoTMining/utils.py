@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-sizeOfSlidingWindow = 4 #the number of weeks in the sliding window for apriori
-timePruningThreshold = 30 # time threshold in minute
-durationThreshold = 15 # duration threshold in minute
+timePruningThreshold = 3 # time threshold in minute
 
 startDate = "2009-08-24" # start and end date got from the study 
 endDate = "2010-05-01"
