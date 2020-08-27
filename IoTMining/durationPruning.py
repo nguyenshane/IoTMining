@@ -7,10 +7,9 @@ Created on Mon Aug 17 13:35:15 2020
 """
 
 from utils import labelSet, timeStampDiff, durationThreshold, basketsKeySet
-from collections import defaultdict
 import numpy as np
+import os
 
-filename = "./npy/datatestnpy.npy"
 
 def durationPruning(filename):
     """Return a map of routine items i.e. a baskets for A-priori"""
@@ -18,7 +17,7 @@ def durationPruning(filename):
     # an item is routine if its duration is longer then the time pruning threshold
     # a routine item can be occupancy: motion sensors ;and usage: lightning sensor
 
-    routineItemsMap = defaultdict(list)
+    routineItemsMap = {}
     dataTable = np.load(filename, allow_pickle = True)
 
     for key in basketsKeySet:
@@ -54,12 +53,34 @@ def durationPruning(filename):
                         totalDuration += timeStampDiff(timeStampList[0],timeStampList[1])
                         timeStampList.clear()
         
-            if totalDuration > durationThreshold : #time pruning
-                routineItems.append(elem)
+            if totalDuration > durationThreshold : #duration pruning
+                routineItems.append((elem,int(totalDuration)))
                 
-        routineItemsMap[key].append(routineItems)
+        routineItemsMap[key] = routineItems
     return routineItemsMap
 
-# un-comment the line below to test output
-#filename = "./npy/datatestnpy.npy"
-#print(durationPruning(filename))
+
+
+if __name__ == '__main__':
+    path = './npy/dataByWeek/'
+    weekCount = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
+    for i in range (0,weekCount):
+        filename = "./npy/dataByWeek/week" + str(i) + '.npy'
+        table = durationPruning(filename)
+        for key in table:
+            print("{} : {}".format(key,table[key]))
+    
+        if not os.path.exists('./ProgOutput/'):
+                os.makedirs('./ProgOutput/')    
+        outFile = open('./ProgOutput/weeklyRoutineActivities.txt','a+')
+        currentWeek = '===== Week ' + str(i+1) + ' ====='
+        outFile.write(currentWeek)
+        outFile.write('\n')
+        for key in table:
+            outFile.writelines("{} : {}".format(key,table[key]))
+            outFile.write('\n')
+            outFile.write('\n')
+        outFile.close()
+
+
+ 
