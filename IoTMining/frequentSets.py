@@ -81,12 +81,16 @@ def rulesGenerator():
     
     if not os.path.exists('./ppRules/'):
             os.makedirs('./ppRules/')
+    
+    ruleSizeFile = open('./ppRules/ruleSize.txt', 'a+')
     for i in range(0,windowCount+1):
         itemsetsList, rulesList, sizeOfRules,basketsSize = findFrequentSets(tuple(range(i,i+3)))
         outFile = open('./ppRules/f' + str(i) + 't' +str(i+3) + '.txt', 'w')
         outFile.write("size of baskets: " + str(basketsSize))
         outFile.write("\n")
         for i in range(0,len(sizeOfRules)):
+            ruleSizeFile.write(str(sizeOfRules[i]))
+            ruleSizeFile.write("\n")
             outFile.write("size of rule list: " + str(sizeOfRules[i]))
             outFile.write("\n")
             for j in range(0,len(rulesList)):
