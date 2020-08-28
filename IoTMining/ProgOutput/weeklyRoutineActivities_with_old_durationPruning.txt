@@ -1,0 +1,1548 @@
+===== Week 1 =====
+00 : [('Bathroom', 30)]
+
+01 : [('LivRoom', 44), ('R2room', 36), ('Kitchen', 39)]
+
+02 : [('R2room', 32)]
+
+10 : []
+
+11 : []
+
+12 : [('R1room', 31)]
+
+20 : []
+
+21 : [('LivRoom', 43)]
+
+22 : [('R2room', 54)]
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : [('LivRoom', 46), ('R1room', 570), ('R2room', 650), ('UpstairsHall', 661), ('DownstairsHall', 736), ('Kitchen', 704), ('Bathroom', 292)]
+
+42 : [('LivRoom', 42)]
+
+50 : [('R2room', 34), ('UpstairsHall', 424), ('DownstairsHall', 321), ('Kitchen', 300), ('Bathroom', 356)]
+
+51 : [('R2room', 43)]
+
+52 : [('R1room', 40)]
+
+60 : []
+
+61 : [('LivRoom', 41)]
+
+62 : [('LivRoom', 44)]
+
+===== Week 2 =====
+00 : []
+
+01 : []
+
+02 : [('LivRoom', 46), ('R2room', 30)]
+
+10 : []
+
+11 : [('LivRoom', 30), ('R1room', 31), ('Kitchen', 30)]
+
+12 : [('R2room', 31), ('Bathroom', 2523)]
+
+20 : []
+
+21 : []
+
+22 : [('R1room', 43)]
+
+30 : []
+
+31 : []
+
+32 : [('LivRoom', 39)]
+
+40 : []
+
+41 : [('LivRoom', 55)]
+
+42 : [('LivRoom', 99)]
+
+50 : []
+
+51 : []
+
+52 : [('LivRoom', 32), ('R1room', 37)]
+
+60 : []
+
+61 : [('LivRoom', 33), ('Kitchen', 31)]
+
+62 : [('R1room', 75)]
+
+===== Week 3 =====
+00 : []
+
+01 : [('LivRoom', 54), ('R2room', 35), ('Kitchen', 49)]
+
+02 : [('R1room', 70)]
+
+10 : []
+
+11 : [('R1room', 37), ('R2room', 39)]
+
+12 : [('R1room', 37), ('R2room', 38)]
+
+20 : [('LivRoom', 41)]
+
+21 : [('LivRoom', 44), ('R1room', 44)]
+
+22 : [('LivRoom', 42), ('R2room', 45)]
+
+30 : []
+
+31 : []
+
+32 : [('R2room', 923)]
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : [('R1room', 49), ('UpstairsHall', 309), ('DownstairsHall', 293), ('Kitchen', 302), ('Bathroom', 293)]
+
+51 : [('LivRoom', 32), ('Bathroom', 762)]
+
+52 : [('R1room', 2769), ('R2room', 2679), ('UpstairsHall', 2687), ('DownstairsHall', 2774), ('Kitchen', 2840), ('Bathroom', 2769)]
+
+60 : [('R1room', 149), ('R2room', 644), ('UpstairsHall', 259), ('DownstairsHall', 139), ('Kitchen', 131), ('Bathroom', 185)]
+
+61 : [('LivRoom', 44)]
+
+62 : [('LivRoom', 69)]
+
+===== Week 4 =====
+00 : []
+
+01 : [('LivRoom', 52), ('Kitchen', 32)]
+
+02 : [('LivRoom', 36), ('R1room', 41)]
+
+10 : []
+
+11 : [('LivRoom', 40), ('Kitchen', 51)]
+
+12 : [('LivRoom', 46), ('R1room', 2818), ('R2room', 2805)]
+
+20 : []
+
+21 : [('R1room', 921), ('R2room', 862)]
+
+22 : [('LivRoom', 45), ('R2room', 36)]
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : []
+
+52 : []
+
+60 : []
+
+61 : []
+
+62 : []
+
+===== Week 5 =====
+00 : []
+
+01 : [('LivRoom', 48), ('Kitchen', 36)]
+
+02 : [('R2room', 41)]
+
+10 : []
+
+11 : [('LivRoom', 46), ('R1room', 37)]
+
+12 : [('R1room', 79), ('R2room', 41)]
+
+20 : []
+
+21 : []
+
+22 : [('R1room', 33), ('R2room', 38)]
+
+30 : []
+
+31 : [('LivRoom', 40), ('Kitchen', 34), ('Bathroom', 429)]
+
+32 : [('LivRoom', 57), ('R2room', 2804), ('UpstairsHall', 2648), ('DownstairsHall', 2617), ('Kitchen', 2581), ('Bathroom', 339)]
+
+40 : [('LivRoom', 32)]
+
+41 : [('LivRoom', 75), ('R1room', 310), ('R2room', 171), ('UpstairsHall', 379), ('DownstairsHall', 890), ('Kitchen', 849), ('Bathroom', 375)]
+
+42 : [('LivRoom', 68), ('R1room', 44), ('R2room', 2706), ('UpstairsHall', 2745), ('DownstairsHall', 2738), ('Kitchen', 2709), ('Bathroom', 2847)]
+
+50 : []
+
+51 : [('R1room', 30)]
+
+52 : [('LivRoom', 48), ('R2room', 38)]
+
+60 : []
+
+61 : [('R1room', 46)]
+
+62 : [('R1room', 68)]
+
+===== Week 6 =====
+00 : []
+
+01 : [('LivRoom', 62), ('Kitchen', 42)]
+
+02 : [('R1room', 32), ('Kitchen', 32)]
+
+10 : []
+
+11 : [('LivRoom', 55), ('Kitchen', 34)]
+
+12 : [('UpstairsHall', 1664), ('DownstairsHall', 2662), ('Kitchen', 2654), ('Bathroom', 1345)]
+
+20 : []
+
+21 : [('R1room', 30), ('R2room', 97), ('UpstairsHall', 823), ('DownstairsHall', 901), ('Kitchen', 868), ('Bathroom', 883)]
+
+22 : [('R1room', 84), ('R2room', 2810), ('UpstairsHall', 2837), ('DownstairsHall', 2796), ('Kitchen', 2787), ('Bathroom', 2692)]
+
+30 : []
+
+31 : []
+
+32 : [('LivRoom', 34), ('R1room', 2667), ('R2room', 2687), ('UpstairsHall', 296), ('DownstairsHall', 284), ('Kitchen', 302), ('Bathroom', 192)]
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : []
+
+52 : []
+
+60 : []
+
+61 : [('R2room', 44)]
+
+62 : []
+
+===== Week 7 =====
+00 : [('LivRoom', 47), ('Kitchen', 30)]
+
+01 : [('Bathroom', 201)]
+
+02 : []
+
+10 : []
+
+11 : [('LivRoom', 30), ('uHall_Light', 224), ('R2room_Light', 143), ('BA_sink_Light', 117), ('Liv_Light', 250), ('dHall_Light', 224), ('Kitchen_Light', 250)]
+
+12 : [('R1room', 44), ('Bathroom', 2489), ('BA_fan', 211)]
+
+20 : [('LivRoom', 39), ('uHall_Light', 321), ('BA_sink_Light', 37), ('Kitchen_Light', 384)]
+
+21 : [('Bathroom', 898), ('uHall_Light', 408)]
+
+22 : []
+
+30 : [('Bathroom', 34)]
+
+31 : [('R1room', 484), ('R2room', 124), ('UpstairsHall', 544), ('DownstairsHall', 544), ('Kitchen', 535), ('Bathroom', 257)]
+
+32 : []
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : [('LivRoom', 42), ('Bathroom', 908)]
+
+52 : [('LivRoom', 74), ('Kitchen', 30)]
+
+60 : []
+
+61 : [('LivRoom', 66)]
+
+62 : [('LivRoom', 58)]
+
+===== Week 8 =====
+00 : []
+
+01 : [('LivRoom', 52), ('Kitchen', 33)]
+
+02 : [('LivRoom', 32), ('R2room', 33)]
+
+10 : []
+
+11 : [('LivRoom', 37)]
+
+12 : [('LivRoom', 62)]
+
+20 : [('LivRoom', 40)]
+
+21 : [('LivRoom', 44), ('UpstairsHall', 906), ('DownstairsHall', 868), ('Kitchen', 741), ('Bathroom', 635)]
+
+22 : [('R2room', 32)]
+
+30 : [('R1room', 30)]
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : []
+
+52 : [('LivRoom', 42), ('R2room', 2616), ('UpstairsHall', 2591), ('DownstairsHall', 2591), ('Kitchen', 427), ('Bathroom', 160)]
+
+60 : [('R2room', 33)]
+
+61 : []
+
+62 : []
+
+===== Week 9 =====
+00 : []
+
+01 : [('R2room', 32), ('UpstairsHall', 939), ('DownstairsHall', 905), ('Kitchen', 795), ('Bathroom', 92)]
+
+02 : [('Kitchen', 32)]
+
+10 : [('Bathroom', 410)]
+
+11 : [('LivRoom', 38), ('UpstairsHall', 781), ('DownstairsHall', 925), ('Kitchen', 930), ('Bathroom', 532)]
+
+12 : [('R1room', 50)]
+
+20 : [('LivRoom', 44), ('Kitchen', 31)]
+
+21 : [('LivRoom', 47), ('Kitchen', 34)]
+
+22 : []
+
+30 : []
+
+31 : [('uHall_Light', 245), ('R2room_Light', 324), ('BA_sink_Light', 199), ('BA_tub_Light', 245), ('BA_fan', 524), ('Liv_Light', 124), ('dHall_Light', 120), ('Kitchen_Light', 369)]
+
+32 : [('LivRoom', 31), ('R2room', 1763), ('UpstairsHall', 1616), ('DownstairsHall', 2836), ('Kitchen', 2812), ('Bathroom', 2649), ('R1room_Light', 276)]
+
+40 : [('R2room_Light', 216), ('BA_sink_Light', 136), ('BA_tub_Light', 56), ('BA_fan', 216), ('Kitchen_Light', 272)]
+
+41 : [('R2room_Light', 232), ('BA_sink_Light', 232), ('BA_fan', 464)]
+
+42 : [('R1room', 40), ('DownstairsHall', 2727), ('Kitchen', 2719), ('Bathroom', 2689), ('R1room_Light', 2677), ('BA_sink_Light', 1316), ('Kitchen_Light', 1316)]
+
+50 : []
+
+51 : []
+
+52 : [('Kitchen', 60), ('Bathroom', 1393), ('R1room_Light', 2402), ('uHall_Light', 159)]
+
+60 : []
+
+61 : [('LivRoom', 90), ('R1room', 877), ('R2room', 788), ('UpstairsHall', 824), ('Kitchen', 49), ('R2room_Light', 511), ('BA_sink_Light', 756), ('BA_fan', 866), ('Liv_Light', 108), ('Kitchen_Light', 163)]
+
+62 : [('LivRoom', 65), ('uHall_Light', 75), ('R2room_Light', 1090), ('BA_sink_Light', 1033), ('Liv_Light', 81), ('dHall_Light', 81)]
+
+===== Week 10 =====
+00 : []
+
+01 : []
+
+02 : []
+
+10 : []
+
+11 : []
+
+12 : []
+
+20 : []
+
+21 : []
+
+22 : []
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : []
+
+52 : []
+
+60 : []
+
+61 : []
+
+62 : []
+
+===== Week 11 =====
+00 : []
+
+01 : [('LivRoom', 54), ('R1room', 310), ('UpstairsHall', 798), ('DownstairsHall', 783), ('Kitchen', 712), ('Bathroom', 491)]
+
+02 : []
+
+10 : []
+
+11 : []
+
+12 : []
+
+20 : [('LivRoom', 30)]
+
+21 : [('LivRoom', 53), ('Kitchen', 37)]
+
+22 : [('R1room', 34)]
+
+30 : [('R1room', 530), ('R2room', 338), ('UpstairsHall', 352), ('DownstairsHall', 413), ('Kitchen', 414), ('Bathroom', 521)]
+
+31 : [('R1room', 43), ('Kitchen', 33)]
+
+32 : [('R2room', 2838), ('UpstairsHall', 2837), ('DownstairsHall', 2843), ('Kitchen', 101), ('Bathroom', 2813)]
+
+40 : []
+
+41 : [('LivRoom', 42), ('R1room', 38), ('UpstairsHall', 893), ('DownstairsHall', 892), ('Kitchen', 853), ('Bathroom', 869)]
+
+42 : [('R1room', 43), ('R2room', 35)]
+
+50 : []
+
+51 : [('R1room', 36), ('R2room', 80)]
+
+52 : [('R1room', 33), ('R2room', 115), ('UpstairsHall', 2379), ('DownstairsHall', 2327), ('Kitchen', 2297), ('Bathroom', 2323)]
+
+60 : []
+
+61 : []
+
+62 : []
+
+===== Week 12 =====
+00 : [('LivRoom', 39), ('Kitchen', 32)]
+
+01 : [('LivRoom', 51), ('UpstairsHall', 674), ('DownstairsHall', 675), ('Kitchen', 610), ('Bathroom', 609)]
+
+02 : [('R1room', 30), ('Bathroom', 1012)]
+
+10 : []
+
+11 : [('R1room_Light', 437), ('R3room_Light', 251), ('uHall_Light', 400), ('R2room_Light', 274), ('BA_sink_Light', 502), ('BA_fan', 646), ('Liv_Light', 149), ('dHall_Light', 72), ('Kitchen_Light', 346)]
+
+12 : []
+
+20 : []
+
+21 : [('LivRoom', 46), ('R1room_Light', 404), ('R2room_Light', 711), ('BA_sink_Light', 497), ('BA_fan', 771), ('Liv_Light', 534), ('Kitchen_Light', 635)]
+
+22 : [('LivRoom', 94), ('R1room', 2814), ('R3room_Light', 1389), ('uHall_Light', 147), ('R2room_Light', 147), ('BA_sink_Light', 1242), ('BA_tub_Light', 1389)]
+
+30 : [('Kitchen_Light', 269)]
+
+31 : [('R2room_Light', 260), ('BA_sink_Light', 407), ('BA_fan', 407), ('Kitchen_Light', 529)]
+
+32 : [('R1room', 65), ('R2room', 2799), ('UpstairsHall', 2856), ('DownstairsHall', 2834), ('Kitchen', 2710), ('Bathroom', 2647), ('R1room_Light', 84), ('R2room_Light', 1287), ('BA_sink_Light', 2491), ('BA_fan', 2491), ('Liv_Light', 69), ('Kitchen_Light', 69)]
+
+40 : [('R2room_Light', 311), ('BA_sink_Light', 228), ('BA_tub_Light', 228), ('BA_fan', 145), ('dHall_Light', 48), ('Kitchen_Light', 48)]
+
+41 : []
+
+42 : [('R1room', 64), ('uHall_Light', 68), ('R2room_Light', 2461), ('BA_fan', 306), ('Liv_Light', 2461), ('dHall_Light', 1160), ('Kitchen_Light', 141)]
+
+50 : [('R1room_Light', 166), ('R2room_Light', 394), ('BA_sink_Light', 192), ('BA_tub_Light', 35), ('BA_fan', 420), ('Kitchen_Light', 227)]
+
+51 : [('Bathroom', 43), ('uHall_Light', 152), ('R2room_Light', 113), ('BA_sink_Light', 103), ('Kitchen_Light', 76)]
+
+52 : [('R1room', 2730), ('R2room', 2817), ('DownstairsHall', 2858), ('Kitchen', 2853), ('Bathroom', 2823), ('R1room_Light', 2619), ('BA_sink_Light', 1337), ('BA_fan', 2633), ('dHall_Light', 37)]
+
+60 : [('BA_fan', 630), ('Liv_Light', 315)]
+
+61 : [('LivRoom', 35), ('R2room', 38), ('UpstairsHall', 819), ('DownstairsHall', 806), ('Kitchen', 787), ('Bathroom', 345), ('R1room_Light', 185), ('R2room_Light', 223), ('BA_sink_Light', 373), ('Liv_Light', 74)]
+
+62 : [('LivRoom', 78)]
+
+===== Week 13 =====
+00 : [('LivRoom', 31), ('R3room_Light', 148), ('uHall_Light', 45), ('BA_sink_Light', 73), ('BA_fan', 458), ('Liv_Light', 148), ('dHall_Light', 148)]
+
+01 : [('LivRoom', 50), ('Kitchen', 31), ('R3room_Light', 139), ('uHall_Light', 165), ('BA_sink_Light', 81), ('Liv_Light', 312), ('dHall_Light', 442), ('Kitchen_Light', 312)]
+
+02 : [('LivRoom', 41), ('Kitchen', 2802), ('Bathroom', 2779), ('R1room_Light', 1375), ('R2room_Light', 1372), ('BA_sink_Light', 2745), ('BA_fan', 1282), ('Kitchen_Light', 90)]
+
+10 : [('uHall_Light', 281), ('BA_sink_Light', 39), ('BA_fan', 172), ('dHall_Light', 140)]
+
+11 : [('R1room', 77), ('R2room_Light', 107), ('dHall_Light', 107)]
+
+12 : [('R1room_Light', 51), ('R2room_Light', 1297), ('Liv_Light', 1246), ('dHall_Light', 1246)]
+
+20 : [('LivRoom', 41), ('uHall_Light', 65), ('R2room_Light', 74), ('Liv_Light', 140), ('Kitchen_Light', 65)]
+
+21 : [('Kitchen', 35), ('R2room_Light', 216), ('Kitchen_Light', 274)]
+
+22 : [('R1room', 48), ('R2room_Light', 1019), ('BA_sink_Light', 69), ('BA_fan', 69)]
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : [('LivRoom', 52), ('R1room', 40), ('Kitchen', 45)]
+
+42 : [('R1room', 42)]
+
+50 : []
+
+51 : []
+
+52 : []
+
+60 : []
+
+61 : []
+
+62 : [('R1room', 2676), ('UpstairsHall', 2489), ('DownstairsHall', 2490), ('Kitchen', 155), ('Bathroom', 2631)]
+
+===== Week 14 =====
+00 : []
+
+01 : []
+
+02 : []
+
+10 : []
+
+11 : []
+
+12 : []
+
+20 : []
+
+21 : [('LivRoom', 47)]
+
+22 : []
+
+30 : []
+
+31 : []
+
+32 : [('Liv_Light', 276)]
+
+40 : []
+
+41 : []
+
+42 : [('BA_fan', 1083), ('Liv_Light', 1083)]
+
+50 : []
+
+51 : [('BA_sink_Light', 162), ('BA_fan', 174), ('Kitchen_Light', 174)]
+
+52 : [('R1room', 44), ('R1room_Light', 59), ('R2room_Light', 62), ('BA_sink_Light', 2181), ('BA_tub_Light', 1090), ('BA_fan', 1031), ('Liv_Light', 62), ('Kitchen_Light', 181)]
+
+60 : [('Kitchen', 165), ('Bathroom', 169), ('R1room_Light', 60), ('R2room_Light', 59), ('BA_sink_Light', 59), ('BA_fan', 59), ('Kitchen_Light', 59)]
+
+61 : [('LivRoom', 65), ('R1room', 87), ('R1room_Light', 95), ('uHall_Light', 95), ('R2room_Light', 166), ('BA_sink_Light', 134), ('BA_fan', 64), ('dHall_Light', 95)]
+
+62 : [('LivRoom', 48), ('R1room', 55)]
+
+===== Week 15 =====
+00 : [('BA_sink_Light', 75), ('BA_tub_Light', 132), ('BA_fan', 372), ('Kitchen_Light', 176)]
+
+01 : [('R2room_Light', 104), ('BA_sink_Light', 94), ('BA_fan', 94), ('Liv_Light', 104), ('Kitchen_Light', 209)]
+
+02 : [('R1room', 49), ('R2room_Light', 1293)]
+
+10 : [('R2room_Light', 399), ('BA_sink_Light', 214), ('BA_fan', 136)]
+
+11 : [('LivRoom', 75), ('R1room', 933), ('R2room', 200), ('UpstairsHall', 664), ('DownstairsHall', 794), ('Kitchen', 775), ('Bathroom', 660), ('R1room_Light', 110), ('R3room_Light', 167), ('BA_sink_Light', 474), ('BA_tub_Light', 245), ('Liv_Light', 155), ('dHall_Light', 373), ('Kitchen_Light', 167)]
+
+12 : [('LivRoom', 51), ('R1room', 31), ('BA_fan', 1255), ('Liv_Light', 2511)]
+
+20 : [('BA_sink_Light', 39)]
+
+21 : [('uHall_Light', 87), ('Liv_Light', 87)]
+
+22 : [('R1room', 48)]
+
+30 : [('R1room_Light', 107), ('BA_sink_Light', 107), ('BA_fan', 107)]
+
+31 : [('Kitchen', 31), ('R1room_Light', 199), ('R2room_Light', 199), ('BA_sink_Light', 165), ('BA_tub_Light', 165), ('BA_fan', 65), ('Liv_Light', 165), ('dHall_Light', 199), ('Kitchen_Light', 199)]
+
+32 : []
+
+40 : [('R2room_Light', 122), ('BA_sink_Light', 94), ('BA_tub_Light', 155), ('BA_fan', 155)]
+
+41 : [('R1room', 49), ('BA_fan', 276)]
+
+42 : [('R1room', 73)]
+
+50 : []
+
+51 : [('R2room', 51), ('R2room_Light', 75), ('BA_sink_Light', 500), ('BA_tub_Light', 53), ('BA_fan', 53), ('Liv_Light', 132), ('Kitchen_Light', 468)]
+
+52 : [('R1room', 2721), ('R2room', 2675), ('UpstairsHall', 2244), ('DownstairsHall', 2104), ('Kitchen', 2182), ('Bathroom', 2163), ('R2room_Light', 1014)]
+
+60 : [('UpstairsHall', 475), ('DownstairsHall', 455), ('Kitchen', 452), ('Bathroom', 463), ('R1room_Light', 104), ('R2room_Light', 103), ('BA_sink_Light', 103)]
+
+61 : [('LivRoom', 96), ('R1room', 777), ('R2room', 715), ('Kitchen', 127), ('R2room_Light', 120), ('BA_sink_Light', 189), ('BA_tub_Light', 379), ('BA_fan', 120), ('Kitchen_Light', 69)]
+
+62 : [('LivRoom', 50)]
+
+===== Week 16 =====
+00 : [('LivRoom', 37), ('R1room_Light', 35), ('BA_sink_Light', 51), ('BA_fan', 249)]
+
+01 : [('LivRoom', 31), ('Kitchen_Light', 848)]
+
+02 : [('Bathroom', 2751), ('R1room_Light', 1241), ('BA_sink_Light', 2482), ('BA_fan', 1241), ('dHall_Light', 1241)]
+
+10 : [('R2room_Light', 34), ('BA_sink_Light', 109)]
+
+11 : [('LivRoom', 63), ('Kitchen', 38), ('R3room_Light', 221), ('R2room_Light', 443), ('BA_sink_Light', 705), ('BA_tub_Light', 360), ('BA_fan', 345), ('Liv_Light', 340), ('dHall_Light', 221), ('Kitchen_Light', 381)]
+
+12 : [('R1room_Light', 1397), ('BA_sink_Light', 2794), ('Kitchen_Light', 2766)]
+
+20 : [('LivRoom', 39), ('R2room_Light', 138), ('BA_sink_Light', 104), ('BA_tub_Light', 104), ('BA_fan', 138)]
+
+21 : [('R2room', 84), ('UpstairsHall', 219), ('DownstairsHall', 240), ('Kitchen', 258), ('Bathroom', 56), ('Liv_Light', 81), ('Kitchen_Light', 110)]
+
+22 : [('LivRoom', 56)]
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : []
+
+52 : []
+
+60 : []
+
+61 : []
+
+62 : []
+
+===== Week 17 =====
+00 : []
+
+01 : []
+
+02 : []
+
+10 : []
+
+11 : []
+
+12 : []
+
+20 : []
+
+21 : []
+
+22 : []
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : [('uHall_Light', 218), ('Kitchen_Light', 436)]
+
+42 : [('LivRoom', 37), ('R1room', 38), ('R1room_Light', 1248), ('BA_sink_Light', 2497)]
+
+50 : []
+
+51 : []
+
+52 : [('R1room', 35)]
+
+60 : []
+
+61 : []
+
+62 : []
+
+===== Week 18 =====
+00 : []
+
+01 : [('Bathroom', 422)]
+
+02 : [('R1room', 42), ('BA_sink_Light', 2794), ('BA_fan', 1397), ('Kitchen_Light', 1397)]
+
+10 : []
+
+11 : [('R1room', 39), ('R3room_Light', 127), ('uHall_Light', 293), ('BA_sink_Light', 293), ('BA_fan', 166), ('Kitchen_Light', 293)]
+
+12 : [('LivRoom', 77), ('UpstairsHall', 2343), ('DownstairsHall', 2299), ('Kitchen', 2289), ('Bathroom', 2317), ('R1room_Light', 1152), ('BA_sink_Light', 1152), ('BA_fan', 2305)]
+
+20 : []
+
+21 : []
+
+22 : []
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : []
+
+52 : []
+
+60 : []
+
+61 : []
+
+62 : []
+
+===== Week 19 =====
+00 : []
+
+01 : []
+
+02 : []
+
+10 : []
+
+11 : []
+
+12 : []
+
+20 : []
+
+21 : []
+
+22 : []
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : []
+
+52 : []
+
+60 : []
+
+61 : []
+
+62 : []
+
+===== Week 20 =====
+00 : []
+
+01 : []
+
+02 : []
+
+10 : []
+
+11 : []
+
+12 : []
+
+20 : []
+
+21 : []
+
+22 : []
+
+30 : []
+
+31 : [('R1room_Light', 125), ('BA_sink_Light', 125), ('dHall_Light', 125)]
+
+32 : []
+
+40 : []
+
+41 : [('R1room', 50), ('R2room_Light', 157), ('BA_sink_Light', 385), ('BA_fan', 125), ('Kitchen_Light', 804)]
+
+42 : [('R1room', 37), ('R2room_Light', 1015), ('BA_sink_Light', 1047), ('BA_fan', 1047)]
+
+50 : [('R1room', 37), ('BA_sink_Light', 55), ('BA_fan', 55), ('Kitchen_Light', 110)]
+
+51 : [('LivRoom', 84), ('R1room', 892), ('R2room', 656), ('UpstairsHall', 532), ('DownstairsHall', 610), ('Kitchen', 585), ('Bathroom', 681), ('R1room_Light', 119), ('uHall_Light', 114), ('R2room_Light', 184), ('BA_sink_Light', 300), ('BA_tub_Light', 114), ('Kitchen_Light', 57)]
+
+52 : [('R2room_Light', 81), ('BA_sink_Light', 81)]
+
+60 : [('UpstairsHall', 281), ('DownstairsHall', 268), ('Kitchen', 159), ('Bathroom', 41)]
+
+61 : [('R1room', 32), ('R2room', 31), ('Bathroom', 33), ('R1room_Light', 151), ('R2room_Light', 171), ('BA_sink_Light', 240), ('BA_tub_Light', 240), ('BA_fan', 173), ('Kitchen_Light', 563)]
+
+62 : [('R1room', 49)]
+
+===== Week 21 =====
+00 : [('R1room_Light', 136), ('R2room_Light', 115), ('BA_sink_Light', 272), ('BA_fan', 272)]
+
+01 : [('LivRoom', 44), ('R2room', 495), ('UpstairsHall', 482), ('DownstairsHall', 891), ('Kitchen', 689), ('Bathroom', 728), ('R3room_Light', 200), ('uHall_Light', 220), ('R2room_Light', 414), ('BA_sink_Light', 269), ('BA_fan', 698), ('Liv_Light', 405), ('dHall_Light', 356), ('Kitchen_Light', 389)]
+
+02 : [('R1room', 54), ('Liv_Light', 1147)]
+
+10 : [('R1room_Light', 263), ('BA_tub_Light', 487)]
+
+11 : [('R1room', 53), ('R1room_Light', 317), ('R3room_Light', 175), ('uHall_Light', 215), ('BA_sink_Light', 142), ('Kitchen_Light', 510)]
+
+12 : [('R1room_Light', 54), ('R2room_Light', 54), ('BA_sink_Light', 204), ('BA_fan', 149), ('Liv_Light', 1299), ('Kitchen_Light', 2468)]
+
+20 : [('R1room_Light', 54), ('R2room_Light', 81)]
+
+21 : [('LivRoom', 30), ('R2room', 35), ('R3room_Light', 147), ('BA_sink_Light', 817), ('Liv_Light', 537), ('dHall_Light', 129), ('Kitchen_Light', 147)]
+
+22 : [('R1room', 44), ('R2room_Light', 91), ('BA_sink_Light', 1149), ('Liv_Light', 91)]
+
+30 : []
+
+31 : [('LivRoom', 38), ('R1room', 905), ('R2room', 786), ('R3room_Light', 52), ('R2room_Light', 382), ('BA_fan', 52), ('Liv_Light', 54), ('dHall_Light', 314), ('Kitchen_Light', 643)]
+
+32 : [('R2room', 39), ('R1room_Light', 57), ('R2room_Light', 1150), ('BA_fan', 2300)]
+
+40 : [('BA_sink_Light', 69)]
+
+41 : []
+
+42 : [('R1room_Light', 1350), ('Kitchen_Light', 1350)]
+
+50 : [('R2room_Light', 147), ('BA_sink_Light', 147), ('BA_fan', 147)]
+
+51 : []
+
+52 : [('uHall_Light', 1258), ('BA_sink_Light', 1371), ('dHall_Light', 111)]
+
+60 : [('R2room_Light', 138), ('BA_fan', 276), ('Kitchen_Light', 276)]
+
+61 : [('R2room', 122), ('UpstairsHall', 896), ('DownstairsHall', 834), ('Kitchen', 798), ('Bathroom', 635), ('uHall_Light', 137), ('BA_sink_Light', 393), ('BA_fan', 123)]
+
+62 : [('R2room', 72)]
+
+===== Week 22 =====
+00 : [('BA_sink_Light', 76)]
+
+01 : [('LivRoom', 114), ('Kitchen', 67), ('R3room_Light', 199), ('uHall_Light', 199), ('BA_sink_Light', 661), ('BA_tub_Light', 467), ('BA_fan', 416), ('Liv_Light', 221), ('Kitchen_Light', 125)]
+
+02 : [('LivRoom', 54), ('BA_fan', 232), ('Liv_Light', 1143), ('Kitchen_Light', 1143)]
+
+10 : [('R2room', 42), ('R2room_Light', 82), ('Kitchen_Light', 82)]
+
+11 : [('R1room', 40), ('R2room', 302), ('UpstairsHall', 730), ('DownstairsHall', 521), ('Kitchen', 306), ('R2room_Light', 309), ('BA_sink_Light', 309), ('BA_fan', 309)]
+
+12 : [('R1room', 66), ('R2room', 41), ('UpstairsHall', 2303), ('DownstairsHall', 2173), ('Kitchen', 2103), ('Bathroom', 2191), ('R1room_Light', 1890), ('R2room_Light', 847), ('BA_sink_Light', 1608), ('BA_fan', 2577)]
+
+20 : [('R1room_Light', 70), ('R2room_Light', 77), ('BA_sink_Light', 139), ('BA_tub_Light', 70), ('BA_fan', 138), ('Liv_Light', 139), ('dHall_Light', 108), ('Kitchen_Light', 179)]
+
+21 : [('LivRoom', 32), ('Kitchen', 44), ('R3room_Light', 276), ('uHall_Light', 155), ('R2room_Light', 121), ('BA_sink_Light', 489), ('BA_fan', 123), ('Liv_Light', 155), ('dHall_Light', 155), ('Kitchen_Light', 521)]
+
+22 : [('R1room', 65), ('BA_sink_Light', 2726), ('BA_fan', 2753), ('Liv_Light', 249), ('Kitchen_Light', 1377)]
+
+30 : [('LivRoom', 44), ('Kitchen', 428), ('Bathroom', 543), ('R3room_Light', 112), ('BA_sink_Light', 180), ('Liv_Light', 110)]
+
+31 : [('LivRoom', 53), ('Kitchen', 39), ('R3room_Light', 165), ('Liv_Light', 267), ('dHall_Light', 165), ('Kitchen_Light', 558)]
+
+32 : [('R1room', 47), ('uHall_Light', 997), ('BA_tub_Light', 997), ('Liv_Light', 997), ('Kitchen_Light', 1994)]
+
+40 : [('LivRoom', 40), ('BA_sink_Light', 109)]
+
+41 : []
+
+42 : [('R1room_Light', 1263), ('R2room_Light', 1263), ('BA_fan', 1263)]
+
+50 : []
+
+51 : [('Kitchen_Light', 232)]
+
+52 : [('BA_sink_Light', 1045), ('BA_tub_Light', 1061)]
+
+60 : []
+
+61 : [('R1room', 48), ('R2room', 57), ('Kitchen', 30), ('R2room_Light', 289), ('BA_sink_Light', 523), ('BA_tub_Light', 463), ('Kitchen_Light', 306)]
+
+62 : []
+
+===== Week 23 =====
+00 : [('R1room_Light', 84), ('R2room_Light', 84), ('BA_sink_Light', 84), ('BA_fan', 39), ('Kitchen_Light', 169)]
+
+01 : [('LivRoom', 58), ('Kitchen', 54), ('R3room_Light', 384), ('uHall_Light', 235), ('BA_sink_Light', 308), ('BA_fan', 543), ('Liv_Light', 418), ('dHall_Light', 273), ('Kitchen_Light', 384)]
+
+02 : [('R2room', 55), ('BA_sink_Light', 1237)]
+
+10 : [('R2room', 38), ('R2room_Light', 109), ('BA_sink_Light', 95), ('BA_fan', 204), ('Kitchen_Light', 109)]
+
+11 : [('R1room', 191), ('UpstairsHall', 35), ('DownstairsHall', 75)]
+
+12 : []
+
+20 : [('LivRoom', 43)]
+
+21 : [('LivRoom', 58), ('UpstairsHall', 947), ('DownstairsHall', 932), ('Kitchen', 814), ('Bathroom', 733)]
+
+22 : [('R1room', 54), ('R2room', 453), ('UpstairsHall', 379), ('DownstairsHall', 248), ('Bathroom', 270)]
+
+30 : [('LivRoom', 45), ('R1room', 454), ('R2room', 232), ('UpstairsHall', 460), ('DownstairsHall', 678)]
+
+31 : [('LivRoom', 42)]
+
+32 : [('LivRoom', 843)]
+
+40 : [('LivRoom', 31)]
+
+41 : [('LivRoom', 58)]
+
+42 : []
+
+50 : [('R2room', 35)]
+
+51 : [('R2room', 30)]
+
+52 : [('R2room', 48)]
+
+60 : []
+
+61 : [('R1room', 32), ('R2room', 35)]
+
+62 : []
+
+===== Week 24 =====
+00 : [('LivRoom', 50)]
+
+01 : [('LivRoom', 43), ('R2room', 41)]
+
+02 : [('R2room', 66)]
+
+10 : []
+
+11 : [('R2room', 70)]
+
+12 : [('R2room', 82), ('Bathroom', 1175)]
+
+20 : [('LivRoom', 51)]
+
+21 : [('LivRoom', 35)]
+
+22 : [('LivRoom', 31), ('R1room', 34), ('UpstairsHall', 2847), ('DownstairsHall', 2830), ('Kitchen', 2819), ('Bathroom', 2781)]
+
+30 : [('LivRoom', 34)]
+
+31 : [('LivRoom', 52), ('Kitchen', 58)]
+
+32 : [('R2room', 44)]
+
+40 : [('Bathroom', 594)]
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : [('R1room', 717), ('R2room', 807), ('UpstairsHall', 910), ('DownstairsHall', 815), ('Kitchen', 798), ('Bathroom', 822)]
+
+52 : [('LivRoom', 48), ('R2room', 32)]
+
+60 : [('R2room', 30), ('UpstairsHall', 262)]
+
+61 : []
+
+62 : [('R1room', 2753), ('R2room', 2826), ('UpstairsHall', 2790), ('DownstairsHall', 2797), ('Kitchen', 2795), ('Bathroom', 2730)]
+
+===== Week 25 =====
+00 : [('LivRoom', 42), ('Kitchen', 41)]
+
+01 : [('LivRoom', 48)]
+
+02 : [('R1room', 72)]
+
+10 : []
+
+11 : [('R2room', 56)]
+
+12 : []
+
+20 : [('LivRoom', 44)]
+
+21 : []
+
+22 : [('LivRoom', 31), ('R2room', 39)]
+
+30 : [('LivRoom', 38)]
+
+31 : [('LivRoom', 37), ('Kitchen', 42)]
+
+32 : [('LivRoom', 47), ('R1room', 2562), ('R2room', 1660), ('UpstairsHall', 1626), ('DownstairsHall', 2598), ('Kitchen', 2671), ('Bathroom', 2458)]
+
+40 : []
+
+41 : [('R2room', 55), ('Bathroom', 797)]
+
+42 : [('LivRoom', 33), ('R2room', 406), ('UpstairsHall', 2593), ('DownstairsHall', 2601), ('Kitchen', 2724), ('Bathroom', 2491)]
+
+50 : [('R2room', 54)]
+
+51 : []
+
+52 : [('R1room', 1081), ('R2room', 2760), ('UpstairsHall', 364), ('DownstairsHall', 358), ('Kitchen', 247), ('Bathroom', 261)]
+
+60 : []
+
+61 : []
+
+62 : [('R2room', 31)]
+
+===== Week 26 =====
+00 : []
+
+01 : [('R2room', 50)]
+
+02 : [('R2room', 37)]
+
+10 : []
+
+11 : []
+
+12 : []
+
+20 : [('LivRoom', 38), ('Kitchen', 33)]
+
+21 : [('Bathroom', 445)]
+
+22 : [('R1room', 76)]
+
+30 : [('LivRoom', 33)]
+
+31 : []
+
+32 : [('R2room', 32)]
+
+40 : [('LivRoom', 31)]
+
+41 : [('LivRoom', 53)]
+
+42 : []
+
+50 : []
+
+51 : [('R1room', 39), ('R2room', 53)]
+
+52 : [('R1room', 36), ('R2room', 45)]
+
+60 : []
+
+61 : [('LivRoom', 55), ('R1room', 43)]
+
+62 : [('R1room', 45)]
+
+===== Week 27 =====
+00 : []
+
+01 : [('Kitchen', 31), ('Bathroom', 516)]
+
+02 : [('R1room', 64), ('R2room', 2845), ('UpstairsHall', 2865), ('DownstairsHall', 2863), ('Kitchen', 2660), ('Bathroom', 2365)]
+
+10 : []
+
+11 : [('R2room', 30)]
+
+12 : []
+
+20 : [('LivRoom', 33)]
+
+21 : [('LivRoom', 58)]
+
+22 : [('LivRoom', 30)]
+
+30 : []
+
+31 : [('LivRoom', 36), ('R2room', 41), ('R1room_Light', 93), ('R2room_Light', 107), ('BA_sink_Light', 107), ('Liv_Light', 93), ('Kitchen_Light', 93)]
+
+32 : [('R2room', 59)]
+
+40 : [('R1room_Light', 52), ('BA_sink_Light', 52), ('Kitchen_Light', 52)]
+
+41 : [('BA_sink_Light', 317), ('BA_fan', 153), ('Liv_Light', 35), ('Kitchen_Light', 258)]
+
+42 : [('Bathroom', 2325), ('R1room_Light', 1114), ('R2room_Light', 1113), ('Liv_Light', 114)]
+
+50 : [('R2room', 35)]
+
+51 : [('R2room', 44), ('R2room_Light', 393), ('BA_tub_Light', 194)]
+
+52 : [('R1room', 41), ('R2room', 56), ('BA_sink_Light', 1307), ('BA_fan', 2614), ('Liv_Light', 1307), ('Kitchen_Light', 1300)]
+
+60 : []
+
+61 : [('R1room', 49), ('R2room', 83), ('R2room_Light', 286), ('BA_sink_Light', 72), ('BA_fan', 72)]
+
+62 : []
+
+===== Week 28 =====
+00 : [('BA_fan', 56)]
+
+01 : [('R2room', 34), ('BA_sink_Light', 303), ('BA_fan', 482), ('dHall_Light', 241), ('Kitchen_Light', 178)]
+
+02 : [('R2room_Light', 1150), ('BA_sink_Light', 146), ('BA_fan', 1004)]
+
+10 : [('R2room', 30), ('BA_sink_Light', 227), ('BA_fan', 91)]
+
+11 : [('LivRoom', 59), ('R1room', 32), ('DownstairsHall', 853), ('Kitchen', 244), ('Bathroom', 747), ('R1room_Light', 59), ('BA_sink_Light', 376), ('BA_tub_Light', 376), ('BA_fan', 376)]
+
+12 : [('LivRoom', 45), ('R1room', 2705), ('R2room', 2638), ('UpstairsHall', 2805), ('DownstairsHall', 2741), ('Kitchen', 2704), ('Bathroom', 2747), ('R1room_Light', 1401), ('R2room_Light', 87), ('BA_sink_Light', 41), ('BA_fan', 2538), ('Liv_Light', 41)]
+
+20 : [('BA_sink_Light', 41), ('BA_fan', 83)]
+
+21 : [('LivRoom', 34), ('R3room_Light', 182), ('uHall_Light', 227), ('R2room_Light', 135), ('BA_sink_Light', 308), ('BA_fan', 308), ('Liv_Light', 180), ('dHall_Light', 47), ('Kitchen_Light', 180)]
+
+22 : [('LivRoom', 39), ('R2room', 39), ('BA_sink_Light', 112)]
+
+30 : [('BA_sink_Light', 128)]
+
+31 : [('LivRoom', 45), ('Kitchen', 41), ('R3room_Light', 346), ('R2room_Light', 62), ('BA_sink_Light', 247), ('Liv_Light', 202), ('dHall_Light', 346), ('Kitchen_Light', 346)]
+
+32 : [('R2room', 37), ('BA_sink_Light', 2538), ('BA_fan', 2538), ('dHall_Light', 1269), ('Kitchen_Light', 1269)]
+
+40 : [('R2room_Light', 42), ('BA_sink_Light', 42)]
+
+41 : [('LivRoom', 35), ('UpstairsHall', 851), ('DownstairsHall', 838), ('Kitchen', 794), ('Bathroom', 534), ('BA_sink_Light', 285), ('BA_fan', 466), ('Liv_Light', 324), ('dHall_Light', 181), ('Kitchen_Light', 324)]
+
+42 : []
+
+50 : []
+
+51 : [('R2room', 54), ('uHall_Light', 143), ('R2room_Light', 303), ('BA_sink_Light', 464), ('BA_tub_Light', 231), ('BA_fan', 233)]
+
+52 : [('R2room', 32), ('UpstairsHall', 329), ('DownstairsHall', 309), ('Kitchen', 232), ('Bathroom', 301), ('R1room_Light', 161), ('R2room_Light', 51), ('BA_sink_Light', 172), ('Kitchen_Light', 82)]
+
+60 : [('R2room', 687), ('UpstairsHall', 374)]
+
+61 : [('R1room', 59), ('R2room', 33), ('R1room_Light', 46), ('uHall_Light', 176), ('R2room_Light', 46), ('BA_sink_Light', 47), ('BA_tub_Light', 47), ('Liv_Light', 130), ('Kitchen_Light', 80)]
+
+62 : [('R2room', 48)]
+
+===== Week 29 =====
+00 : [('LivRoom', 49), ('Kitchen', 39), ('R1room_Light', 132), ('R3room_Light', 98), ('R2room_Light', 114), ('BA_sink_Light', 420), ('BA_tub_Light', 193), ('Kitchen_Light', 267)]
+
+01 : [('LivRoom', 66), ('Kitchen', 764), ('Bathroom', 780), ('R3room_Light', 277), ('BA_sink_Light', 277), ('BA_fan', 354), ('Liv_Light', 277), ('dHall_Light', 371), ('Kitchen_Light', 371)]
+
+02 : []
+
+10 : [('R2room', 30), ('R2room_Light', 236), ('BA_sink_Light', 236), ('BA_fan', 473), ('Liv_Light', 236)]
+
+11 : [('R1room', 33), ('R2room', 30), ('Bathroom', 290), ('uHall_Light', 184), ('R2room_Light', 184), ('Kitchen_Light', 368)]
+
+12 : [('LivRoom', 31), ('R1room', 35), ('R1room_Light', 255), ('BA_sink_Light', 939), ('BA_fan', 939)]
+
+20 : [('LivRoom', 50), ('R1room_Light', 103), ('BA_sink_Light', 134), ('BA_fan', 207), ('Liv_Light', 181)]
+
+21 : [('LivRoom', 69), ('BA_sink_Light', 168), ('BA_fan', 168), ('Liv_Light', 249), ('dHall_Light', 168), ('Kitchen_Light', 309)]
+
+22 : [('LivRoom', 63), ('R1room', 76), ('R1room_Light', 75), ('Kitchen_Light', 75)]
+
+30 : [('LivRoom', 37), ('BA_sink_Light', 174), ('BA_tub_Light', 174)]
+
+31 : [('LivRoom', 59), ('R2room', 840), ('UpstairsHall', 902), ('DownstairsHall', 891), ('Kitchen', 784), ('Bathroom', 847), ('R3room_Light', 166), ('R2room_Light', 212), ('BA_sink_Light', 516), ('Liv_Light', 170), ('dHall_Light', 212), ('Kitchen_Light', 357)]
+
+32 : [('LivRoom', 51), ('R1room', 57), ('R2room_Light', 1322), ('BA_sink_Light', 2539), ('BA_fan', 2499), ('Kitchen_Light', 2434)]
+
+40 : [('R1room', 53), ('BA_sink_Light', 69), ('BA_fan', 138)]
+
+41 : [('R3room_Light', 145), ('BA_sink_Light', 372), ('BA_fan', 227)]
+
+42 : [('R1room', 35), ('BA_fan', 43)]
+
+50 : []
+
+51 : []
+
+52 : []
+
+60 : []
+
+61 : []
+
+62 : []
+
+===== Week 30 =====
+00 : []
+
+01 : []
+
+02 : []
+
+10 : []
+
+11 : []
+
+12 : []
+
+20 : []
+
+21 : []
+
+22 : []
+
+30 : []
+
+31 : []
+
+32 : []
+
+40 : []
+
+41 : []
+
+42 : []
+
+50 : []
+
+51 : []
+
+52 : [('BA_sink_Light', 72), ('Liv_Light', 55)]
+
+60 : [('BA_sink_Light', 41), ('BA_fan', 41)]
+
+61 : [('R1room', 65), ('R2room', 118), ('R2room_Light', 308), ('BA_sink_Light', 342)]
+
+62 : [('R1room', 84), ('R2room', 71)]
+
+===== Week 31 =====
+00 : [('LivRoom', 34), ('Kitchen', 33), ('R1room_Light', 128), ('R2room_Light', 109), ('BA_sink_Light', 103), ('BA_tub_Light', 268), ('Kitchen_Light', 31)]
+
+01 : [('LivRoom', 71), ('Kitchen', 37), ('BA_sink_Light', 209), ('BA_fan', 152), ('dHall_Light', 76), ('Kitchen_Light', 209)]
+
+02 : [('R1room', 39), ('R2room', 80), ('R1room_Light', 76)]
+
+10 : [('UpstairsHall', 304), ('DownstairsHall', 242), ('Kitchen', 160), ('Bathroom', 225), ('R2room_Light', 56), ('BA_sink_Light', 301), ('BA_tub_Light', 56), ('BA_fan', 301), ('Kitchen_Light', 56)]
+
+11 : [('BA_sink_Light', 101)]
+
+12 : [('LivRoom', 30)]
+
+20 : [('R1room_Light', 198), ('BA_sink_Light', 198), ('BA_fan', 396)]
+
+21 : [('uHall_Light', 213), ('BA_fan', 144)]
+
+22 : [('R1room', 52), ('R2room_Light', 2373), ('BA_sink_Light', 1446), ('BA_tub_Light', 42), ('BA_fan', 2532), ('Kitchen_Light', 2437)]
+
+30 : [('R2room_Light', 117), ('BA_sink_Light', 117), ('BA_fan', 117), ('Kitchen_Light', 117)]
+
+31 : [('BA_sink_Light', 115)]
+
+32 : [('R2room_Light', 193), ('BA_sink_Light', 93), ('BA_tub_Light', 99), ('BA_fan', 2100), ('Kitchen_Light', 354)]
+
+40 : [('R1room', 32), ('R2room_Light', 153), ('BA_sink_Light', 467), ('BA_fan', 159)]
+
+41 : [('Kitchen_Light', 44)]
+
+42 : [('R2room_Light', 107), ('BA_sink_Light', 406), ('BA_fan', 406), ('Liv_Light', 203), ('Kitchen_Light', 406)]
+
+50 : [('BA_sink_Light', 38), ('BA_fan', 38), ('Kitchen_Light', 38)]
+
+51 : [('R2room', 132), ('R2room_Light', 124)]
+
+52 : [('R2room', 44), ('R2room_Light', 1209), ('BA_fan', 1209), ('Liv_Light', 2463), ('Kitchen_Light', 1253)]
+
+60 : []
+
+61 : [('R2room', 46), ('R2room_Light', 170), ('BA_sink_Light', 54), ('BA_tub_Light', 475)]
+
+62 : [('R1room', 44), ('R2room', 57)]
+
+===== Week 32 =====
+00 : [('LivRoom', 38), ('R3room_Light', 100), ('R2room_Light', 159), ('BA_sink_Light', 309), ('BA_tub_Light', 129), ('Liv_Light', 110), ('Kitchen_Light', 69)]
+
+01 : [('R1room_Light', 68)]
+
+02 : [('R1room', 67), ('R2room', 31), ('UpstairsHall', 2865), ('DownstairsHall', 2849), ('Kitchen', 2703), ('Bathroom', 2665), ('BA_sink_Light', 2721), ('BA_fan', 2593), ('Kitchen_Light', 127)]
+
+10 : [('UpstairsHall', 639), ('DownstairsHall', 97), ('Kitchen', 91), ('Bathroom', 551), ('R2room_Light', 222), ('BA_sink_Light', 529), ('BA_tub_Light', 84), ('BA_fan', 531)]
+
+11 : [('R2room', 67)]
+
+12 : [('R2room', 104), ('UpstairsHall', 2812), ('DownstairsHall', 2795), ('Kitchen', 2729), ('Bathroom', 2719), ('R2room_Light', 1244), ('BA_sink_Light', 2619), ('Kitchen_Light', 2749)]
+
+20 : [('R1room_Light', 61), ('BA_fan', 61)]
+
+21 : [('LivRoom', 66), ('Kitchen', 33), ('R3room_Light', 112), ('BA_sink_Light', 445), ('BA_tub_Light', 412), ('BA_fan', 299), ('Liv_Light', 412), ('dHall_Light', 246), ('Kitchen_Light', 412)]
+
+22 : [('R2room', 53), ('BA_sink_Light', 2546)]
+
+30 : [('LivRoom', 39), ('R2room', 679), ('UpstairsHall', 436), ('DownstairsHall', 415), ('Kitchen', 340), ('Bathroom', 375), ('R2room_Light', 206), ('BA_sink_Light', 285), ('BA_fan', 142)]
+
+31 : [('LivRoom', 50), ('R1room', 38), ('R2room', 729), ('UpstairsHall', 722), ('DownstairsHall', 827), ('Kitchen', 660), ('Bathroom', 727), ('R1room_Light', 50), ('R2room_Light', 509), ('BA_sink_Light', 673), ('BA_fan', 794), ('Kitchen_Light', 126)]
+
+32 : [('R1room', 64), ('Liv_Light', 338)]
+
+40 : [('LivRoom', 49), ('Bathroom', 40), ('BA_sink_Light', 234), ('BA_tub_Light', 334), ('BA_fan', 342), ('dHall_Light', 31)]
+
+41 : [('LivRoom', 48)]
+
+42 : []
+
+50 : []
+
+51 : [('R1room_Light', 59), ('uHall_Light', 59), ('BA_sink_Light', 389), ('BA_tub_Light', 59), ('Kitchen_Light', 59)]
+
+52 : [('R2room', 1775), ('UpstairsHall', 2717), ('DownstairsHall', 2671), ('Kitchen', 2671), ('Bathroom', 2480), ('R1room_Light', 1144), ('BA_sink_Light', 1188), ('BA_fan', 1188)]
+
+60 : []
+
+61 : [('LivRoom', 31), ('R2room', 34), ('R2room_Light', 257), ('BA_sink_Light', 257), ('BA_tub_Light', 284), ('BA_fan', 274), ('Kitchen_Light', 57)]
+
+62 : [('R1room', 57)]
+
+===== Week 33 =====
+00 : [('R2room_Light', 119)]
+
+01 : [('LivRoom', 42), ('BA_sink_Light', 83), ('BA_fan', 81), ('Liv_Light', 76), ('Kitchen_Light', 76)]
+
+02 : [('R1room', 62), ('Kitchen', 30), ('R3room_Light', 1321), ('uHall_Light', 165), ('R2room_Light', 163), ('BA_sink_Light', 192), ('BA_tub_Light', 165), ('BA_fan', 2343), ('Liv_Light', 136), ('Kitchen_Light', 2341)]
+
+10 : [('R1room_Light', 173), ('BA_sink_Light', 102), ('BA_tub_Light', 56), ('BA_fan', 173), ('Kitchen_Light', 70)]
+
+11 : [('R1room', 45), ('R2room', 61), ('R1room_Light', 98), ('BA_sink_Light', 98), ('BA_fan', 291), ('Kitchen_Light', 291)]
+
+12 : [('R2room', 50), ('BA_sink_Light', 1173), ('BA_fan', 1173), ('Liv_Light', 1173)]
+
+20 : [('R2room_Light', 57)]
+
+21 : [('BA_fan', 152), ('Kitchen_Light', 152)]
+
+22 : [('R2room', 71), ('BA_sink_Light', 196), ('BA_fan', 196)]
+
+30 : [('UpstairsHall', 426), ('DownstairsHall', 276), ('Kitchen', 260), ('Bathroom', 391), ('R1room_Light', 59), ('R2room_Light', 73), ('BA_sink_Light', 176), ('BA_tub_Light', 150), ('BA_fan', 64), ('dHall_Light', 176)]
+
+31 : [('LivRoom', 59), ('R3room_Light', 184), ('R2room_Light', 307), ('BA_sink_Light', 184), ('BA_fan', 471), ('Liv_Light', 195)]
+
+32 : [('R3room_Light', 30), ('R2room_Light', 48), ('BA_sink_Light', 138), ('BA_fan', 87), ('Liv_Light', 30), ('dHall_Light', 69)]
+
+40 : []
+
+41 : [('LivRoom', 37), ('R1room_Light', 207), ('uHall_Light', 132), ('BA_sink_Light', 263), ('BA_fan', 420), ('Liv_Light', 230), ('dHall_Light', 92), ('Kitchen_Light', 111)]
+
+42 : [('Kitchen_Light', 2250)]
+
+50 : []
+
+51 : [('R1room', 38), ('R1room_Light', 102)]
+
+52 : []
+
+60 : []
+
+61 : [('R1room', 39), ('BA_sink_Light', 57), ('Kitchen_Light', 57)]
+
+62 : []
+
+===== Week 34 =====
+00 : [('LivRoom', 33), ('R1room_Light', 52), ('R2room_Light', 140), ('BA_sink_Light', 141), ('BA_fan', 158)]
+
+01 : [('LivRoom', 46), ('Kitchen', 33), ('R2room_Light', 271), ('Liv_Light', 212), ('Kitchen_Light', 212)]
+
+02 : [('R1room', 34), ('R2room_Light', 82), ('BA_sink_Light', 2572), ('Kitchen_Light', 1203)]
+
+10 : [('R2room', 48), ('R1room_Light', 97), ('R2room_Light', 100), ('BA_sink_Light', 515), ('Liv_Light', 142), ('Kitchen_Light', 59)]
+
+11 : [('Kitchen_Light', 749)]
+
+12 : [('UpstairsHall', 2302), ('DownstairsHall', 2264), ('Kitchen', 403), ('Bathroom', 2219), ('R1room_Light', 1076), ('R2room_Light', 953), ('BA_sink_Light', 1338), ('BA_fan', 1338), ('Liv_Light', 192)]
+
+20 : [('R1room_Light', 145), ('BA_sink_Light', 145), ('Kitchen_Light', 30)]
+
+21 : [('R2room_Light', 130), ('BA_sink_Light', 130), ('Kitchen_Light', 130)]
+
+22 : [('BA_sink_Light', 205), ('Liv_Light', 102), ('Kitchen_Light', 102)]
+
+30 : [('R1room', 42), ('BA_sink_Light', 106), ('BA_fan', 106), ('Liv_Light', 185), ('Kitchen_Light', 78)]
+
+31 : [('R2room', 35)]
+
+32 : [('R2room_Light', 1061), ('BA_sink_Light', 935), ('BA_fan', 935), ('Kitchen_Light', 126)]
+
+40 : [('R2room_Light', 85), ('BA_sink_Light', 85), ('BA_tub_Light', 85), ('BA_fan', 43)]
+
+41 : [('LivRoom', 35), ('R3room_Light', 191), ('dHall_Light', 191), ('Kitchen_Light', 191)]
+
+42 : [('R2room_Light', 1038)]
+
+50 : []
+
+51 : [('R1room_Light', 136), ('BA_sink_Light', 136), ('BA_fan', 50), ('Kitchen_Light', 50)]
+
+52 : [('R2room', 32), ('UpstairsHall', 285), ('DownstairsHall', 110), ('Bathroom', 109), ('R2room_Light', 106)]
+
+60 : []
+
+61 : [('R1room', 57), ('R2room', 85), ('uHall_Light', 87), ('BA_sink_Light', 551), ('BA_fan', 638), ('Kitchen_Light', 300)]
+
+62 : []
+
+===== Week 35 =====
+00 : [('R2room_Light', 38), ('BA_tub_Light', 156), ('BA_fan', 156), ('Kitchen_Light', 158)]
+
+01 : [('LivRoom', 40), ('Kitchen', 32), ('R2room_Light', 65), ('BA_sink_Light', 297), ('BA_fan', 145), ('Liv_Light', 79), ('Kitchen_Light', 79)]
+
+02 : [('R1room', 37), ('R2room', 44)]
+
+10 : [('R1room_Light', 68), ('R2room_Light', 68), ('BA_sink_Light', 180), ('BA_tub_Light', 68), ('BA_fan', 134)]
+
+11 : [('LivRoom', 46), ('R2room_Light', 219), ('Kitchen_Light', 192)]
+
+12 : [('UpstairsHall', 2259), ('DownstairsHall', 2089), ('Kitchen', 68), ('Bathroom', 1953), ('uHall_Light', 125)]
+
+20 : [('R1room_Light', 58), ('BA_tub_Light', 58), ('BA_fan', 58), ('Liv_Light', 58), ('Kitchen_Light', 277)]
+
+21 : [('LivRoom', 47), ('R3room_Light', 64), ('R2room_Light', 360), ('BA_sink_Light', 512), ('Liv_Light', 216), ('dHall_Light', 216)]
+
+22 : [('R1room', 62), ('R1room_Light', 190), ('Liv_Light', 183)]
+
+30 : [('LivRoom', 39), ('BA_sink_Light', 338), ('BA_fan', 338), ('Kitchen_Light', 446)]
+
+31 : [('LivRoom', 43), ('R3room_Light', 30), ('BA_sink_Light', 755), ('Liv_Light', 196)]
+
+32 : [('R2room_Light', 131), ('BA_sink_Light', 184), ('BA_fan', 468), ('Liv_Light', 234), ('Kitchen_Light', 427)]
+
+40 : [('LivRoom', 40), ('R1room_Light', 30), ('BA_sink_Light', 30), ('BA_tub_Light', 30), ('BA_fan', 30)]
+
+41 : [('LivRoom', 69), ('Kitchen', 54), ('R3room_Light', 194), ('BA_fan', 472), ('Liv_Light', 194), ('Kitchen_Light', 194)]
+
+42 : [('R2room', 2820), ('UpstairsHall', 317), ('DownstairsHall', 255), ('Kitchen', 155), ('Bathroom', 251), ('R1room_Light', 36), ('BA_sink_Light', 99), ('Kitchen_Light', 107)]
+
+50 : [('UpstairsHall', 589), ('DownstairsHall', 435), ('Kitchen', 214), ('Bathroom', 316), ('R1room_Light', 228)]
+
+51 : [('LivRoom', 74), ('BA_sink_Light', 369), ('BA_tub_Light', 296), ('BA_fan', 443)]
+
+52 : [('BA_sink_Light', 1299), ('BA_fan', 1299), ('Kitchen_Light', 148)]
+
+60 : [('Bathroom', 300), ('R1room_Light', 94), ('BA_sink_Light', 94)]
+
+61 : [('LivRoom', 77), ('UpstairsHall', 680), ('DownstairsHall', 856), ('Kitchen', 927), ('Bathroom', 604), ('BA_sink_Light', 342), ('BA_fan', 469), ('Kitchen_Light', 300)]
+
+62 : [('R2room', 35)]
+
+===== Week 36 =====
+00 : [('R2room_Light', 50), ('BA_sink_Light', 100), ('BA_fan', 100)]
+
+01 : [('UpstairsHall', 860), ('DownstairsHall', 922), ('Kitchen', 908), ('Bathroom', 721), ('R2room_Light', 70), ('Kitchen_Light', 256)]
+
+02 : [('R2room_Light', 1298), ('BA_sink_Light', 102), ('BA_fan', 102), ('Liv_Light', 138), ('Kitchen_Light', 2597)]
+
+10 : [('BA_sink_Light', 175)]
+
+11 : [('R2room', 42), ('R2room_Light', 721), ('BA_sink_Light', 159), ('BA_fan', 159), ('Kitchen_Light', 229)]
+
+12 : [('R1room', 94), ('R2room', 41), ('UpstairsHall', 2615), ('DownstairsHall', 2282), ('Kitchen', 46), ('Bathroom', 2578), ('BA_sink_Light', 50), ('BA_fan', 50)]
+
+20 : [('LivRoom', 55), ('Kitchen', 34), ('R3room_Light', 183), ('BA_sink_Light', 225), ('Liv_Light', 205), ('dHall_Light', 183), ('Kitchen_Light', 205)]
+
+21 : []
+
+22 : [('R1room', 50), ('R2room', 80), ('UpstairsHall', 2863), ('DownstairsHall', 448), ('Kitchen', 438), ('Bathroom', 2825), ('R1room_Light', 45), ('R3room_Light', 181), ('BA_sink_Light', 181), ('BA_fan', 362)]
+
+30 : [('LivRoom', 48), ('R3room_Light', 82), ('BA_sink_Light', 82), ('Liv_Light', 82), ('Kitchen_Light', 82)]
+
+31 : [('R2room', 30), ('R2room_Light', 304), ('BA_fan', 94)]
+
+32 : [('R2room', 81), ('R1room_Light', 2704), ('R2room_Light', 2176), ('BA_sink_Light', 326), ('BA_fan', 2645), ('Kitchen_Light', 183)]
+
+40 : [('LivRoom', 34), ('BA_sink_Light', 184), ('BA_fan', 367), ('Liv_Light', 121), ('Kitchen_Light', 108)]
+
+41 : [('R3room_Light', 69), ('uHall_Light', 69), ('BA_sink_Light', 139)]
+
+42 : [('Kitchen_Light', 145)]
+
+50 : []
+
+51 : [('R1room_Light', 179), ('uHall_Light', 179), ('BA_sink_Light', 179), ('BA_fan', 179), ('dHall_Light', 179), ('Kitchen_Light', 179)]
+
+52 : []
+
+60 : []
+
+61 : []
+
+62 : []
+
