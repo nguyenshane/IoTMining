@@ -56,7 +56,7 @@ def preProcessing(week, dataTable):
     return
 
 def pruneByDevice(segment, segmentCount):    
-    deviceList = segment[:, 3]
+    deviceList = segment[:, 4]
     for index, device in enumerate(deviceList):
         if (device != None):
             if ('Light' in device) or ('fan' in device):
@@ -68,9 +68,9 @@ def pruneByDevice(segment, segmentCount):
     return []
 
 def pruneDuplication(segment):
-    onIdx = (segment[:, 4] == "ON")
+    onIdx = (segment[:, 5] == "ON")
     onSegment = segment[onIdx]
-    uniqueKeys, indices = np.unique(onSegment[:, 3], return_index=True)
+    uniqueKeys, indices = np.unique(onSegment[:, 4], return_index=True)
     
     newSegment = onSegment[indices]
     return newSegment
