@@ -34,21 +34,19 @@ def findFrequentSets(weeks):
                     if (len(currentDataTable) == 0):
                         continue
                     
-                    uniqueSegments = np.unique(currentDataTable[:,3])
+                    uniqueSegments = np.unique(currentDataTable[:,4])
                     
                     for uniqueSegment in uniqueSegments:
                         if (not id in baskets):
-                            baskets[id] = [tuple(set(currentDataTable[:, 4]))]
+                            baskets[id] = [tuple(set(currentDataTable[:, 5]))]
                         else:
-                            baskets[id].extend([tuple(set(currentDataTable[:, 4]))])
+                            baskets[id].extend([tuple(set(currentDataTable[:, 5]))])
             
         # if ((dataTable is None) & (len(weekDataTable) > 0)):
         #     dataTable = weekDataTable
         # elif (len(weekDataTable) > 0):
         #     dataTable = np.concatenate([dataTable, weekDataTable])
         
-    
-    
                     
     rulesList = []
     itemsetsList = [] 
@@ -62,12 +60,12 @@ def findFrequentSets(weeks):
         sizeOfRules.append(len(rules))
         #print( "size of rules: " + str(len(rules)))
         #print("size of basket : " + str(len(baskets)))
-        #for elem in rules:
-            #print(elem)
+        for elem in rules:
+            print(elem)
 
                     
             
-    # print("Baskets", baskets)
+    #print("Baskets", baskets)
     return itemsetsList, rulesList, sizeOfRules, len(baskets)
 
         
@@ -100,6 +98,6 @@ def rulesGenerator():
             
         outFile.close()
         
-#rulesGenerator()
+rulesGenerator()
         
 

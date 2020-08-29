@@ -20,6 +20,7 @@ def loadDataset(filename):
             # 2009-08-24 00:00:19.034964	M050	ON	R1_Wandering_in_room begin
             # Turn them into the following fields
             timestamp = None
+            originalSensor = None
             sensor = None
             value = None
             activity = None
@@ -28,7 +29,9 @@ def loadDataset(filename):
             try:
                 if 'M' == lineList[2][0] or 'L' == lineList[2][0]:
                     # choose only M, L sensors
-                    sensor = sensorFilter(str(np.array(lineList[2])))
+                    
+                    originalSensor = str(np.array(lineList[2]))
+                    sensor = sensorFilter(originalSensor)
                     
                     if (sensor is None):
                         continue
@@ -56,6 +59,7 @@ def loadDataset(filename):
                     dataTable.append([timestamp,
                                       dayOfWeek, 
                                       partitionTimeOfDay,
+                                      originalSensor,
                                       sensor,
                                       value,
                                       activity])
