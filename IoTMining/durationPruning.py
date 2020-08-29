@@ -70,13 +70,14 @@ def upgradedDurationPruning(filename):
     #upgraded version to run faster by taking advantages of numpy table features
     
     routineItemsMap = defaultdict(list)
+    routineItemMapIDOnly = defaultdict(list)
     dataTable = np.load(filename, allow_pickle = True)
     
     for elem in labelSet:
         routineItems = []
         for i in range(0,7):
             for j in range(0,3):
-                idx = ((dataTable[:,3] == elem) & (dataTable[:,1] == i) & (dataTable[:,2] == j))
+                idx = ((dataTable[:,4] == elem) & (dataTable[:,1] == i) & (dataTable[:,2] == j))
                 opTable = dataTable[idx]
                 lookingForOn = True
                 endPoint = opTable.shape
@@ -88,7 +89,7 @@ def upgradedDurationPruning(filename):
                 for row in range(0,endPoint[0]):
                     
                     #looking for last off
-                    if "OFF" == str(opTable[row][4]):
+                    if "OFF" == str(opTable[row][5]):
                         lastOff = str(opTable[row][0]).split()[1]
                     
                     #in case reach the end but OFF not found (i.e. device has only ON)
@@ -97,7 +98,7 @@ def upgradedDurationPruning(filename):
                         timeStampList.append(timeStamp[1])
                    
                     #looking for ON
-                    if lookingForOn and "ON" == str(opTable[row][4]):
+                    if lookingForOn and "ON" == str(opTable[row][5]):
                         if not firstOnFound:
                             firstOn = str(opTable[row][0]).split()[1]
                             firstOnFound = True
@@ -106,7 +107,7 @@ def upgradedDurationPruning(filename):
                         lookingForOn = False
                         
                     #looking for OFF
-                    if not lookingForOn and "OFF" == str(opTable[row][4]):
+                    if not lookingForOn and "OFF" == str(opTable[row][5]):
                         timeStamp = str(opTable[row][0]).split()
                         timeStampList.append(timeStamp[1])
                         lookingForOn = True
@@ -119,10 +120,11 @@ def upgradedDurationPruning(filename):
                 if totalDuration > durationThreshold : #duration pruning
                     key = str(i) + str(j)        
                     routineItemsMap[key].append((elem,int(totalDuration),str(firstOn),str(lastOff)))
+                    routineItemMapIDOnly[key].append(elem)
              
                
             
-    return routineItemsMap
+    return routineItemsMap, routineItemMapIDOnly
             
  
 if __name__ == '__main__':
@@ -131,11 +133,11 @@ if __name__ == '__main__':
     for i in range (0,weekCount):
         filename = "./npy/dataByWeek/week" + str(i) + '.npy'
         #table = upgradedDurationPruning(filename) #old version, much slower
-        table = upgradedDurationPruning(filename)
+        table1, table2 = upgradedDurationPruning(filename)
         currentWeek = '===== Week ' + str(i+1) + ' ====='
         print(currentWeek)
         for key in basketsKeySet:
-            print("{} : {}".format(key,table[key]))
+            print("{} : {}".format(key,table2[key]))
         print('\n')
     
         if not os.path.exists('./ProgOutput/'):
@@ -145,7 +147,7 @@ if __name__ == '__main__':
         outFile.write(currentWeek)
         outFile.write('\n')
         for key in basketsKeySet:
-            outFile.writelines("{} : {}".format(key,table[key]))
+            outFile.writelines("{} : {}".format(key,table2[key]))
             outFile.write('\n')
             outFile.write('\n')
         outFile.close()
