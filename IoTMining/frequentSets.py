@@ -55,19 +55,21 @@ def findFrequentSets(weeks):
         #print("Basket", baskets[id])
         
         itemsets, rules = apriori(baskets[id], min_support=0.9, min_confidence=1, max_length=2)
-        rulesList.append(rules)
+
         itemsetsList.append(itemsets)
-        sizeOfRules.append(len(rules))
-        #print( "size of rules: " + str(len(rules)))
-        #print("size of basket : " + str(len(baskets)))
-        for elem in rules:
-            print(elem)
-
-                    
-            
+        
+        rulesFilter = filter(lambda rule: findActuator(rule), rules)
+        filteredRules = []
+        for rule in rulesFilter:
+            filteredRules.append(rule)
+        
+        rulesList.append([id, filteredRules])
+ 
     #print("Baskets", baskets)
-    return itemsetsList, rulesList, sizeOfRules, len(baskets)
+    return itemsetsList, rulesList, len(baskets)
 
+def findActuator(tup):
+    return all((any(substr in e for substr in ['Light', 'fan'])) for e in tup.rhs)
         
 def rulesGenerator():
     
@@ -81,20 +83,20 @@ def rulesGenerator():
             os.makedirs('./ppRules/')
     
     ruleSizeFile = open('./ppRules/ruleSize.txt', 'a+')
-    for i in range(0,windowCount+1):
-        itemsetsList, rulesList, sizeOfRules,basketsSize = findFrequentSets(tuple(range(i,i+3)))
+    for i in range(0, windowCount+1):
+        itemsetsList, rulesList, basketsSize = findFrequentSets(tuple(range(i, i+3)))
         outFile = open('./ppRules/f' + str(i) + 't' +str(i+3) + '.txt', 'w')
         outFile.write("size of baskets: " + str(basketsSize))
         outFile.write("\n")
-        for i in range(0,len(sizeOfRules)):
-            ruleSizeFile.write(str(sizeOfRules[i]))
+        for i in range(0, basketsSize):
             ruleSizeFile.write("\n")
-            outFile.write("size of rule list: " + str(sizeOfRules[i]))
+            outFile.write("date time segment: " + str(rulesList[i][0]) + "\n")
+            outFile.write("size of rule list: " + str(len(rulesList[i][1])))
             outFile.write("\n")
-            for j in range(0,len(rulesList)):
-                outFile.write(str(rulesList[j]))
-                outFile.write("\n")
-                outFile.write("\n")
+            
+            outFile.write(str(rulesList[i]))
+            outFile.write("\n")
+            outFile.write("\n")
             
         outFile.close()
         
