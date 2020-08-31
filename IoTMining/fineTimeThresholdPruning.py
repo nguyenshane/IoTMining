@@ -3,15 +3,17 @@
 
 import utils
 import os
-from datetime import datetime, time, timedelta
+from datetime import timedelta
 import numpy as np
-from numpy.core.defchararray import find
+import time
 
-
-def preProcessing(week, dataTable):
+def fineTimeThresholdPruning(week, dataTable):
+    startProcessTime = time.process_time()
     if (dataTable is None):
         filename = "./npy/dataByWeek/week" + str(week) + ".npy"
         dataTable = np.load(filename, allow_pickle = True)
+        
+    dataSize = len(dataTable)
     
     prunedDataTable = []
     startTime = dataTable[0][:1][0]
@@ -45,14 +47,22 @@ def preProcessing(week, dataTable):
                 break
             startTime = dataTable[0][:1][0]
         else:
-            break;
+            break
             
     prunedDataTable = np.array(prunedDataTable, dtype=object)
     if not os.path.exists('npy/prunedDataByWeek'):
         os.makedirs('npy/prunedDataByWeek')
     np.save('./npy/prunedDataByWeek/week' + str(week), prunedDataTable)
+    
+    endProcessTime = time.process_time() - startProcessTime
+    print('week:', week, 'excecution time:', endProcessTime)
+    if not os.path.exists('./ProgOutput/'):
+        os.makedirs('./ProgOutput/')    
+    outFile = open('./ProgOutput/pruneFineTimeThreshold-Measure.txt','a+')
+    outFile.writelines("{}, {}, {}\n".format(week, dataSize, endProcessTime))
+    outFile.close()
     print('prunedDataTable', prunedDataTable)
-            
+
     return
 
 def pruneByDevice(segment, segmentCount):    
@@ -74,6 +84,14 @@ def pruneDuplication(segment):
     
     newSegment = onSegment[indices]
     return newSegment
+
+if __name__ == '__main__':
+    path = './npy/dataByWeek/'
+    weekCount = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
+    for i in range (0, weekCount):
+        filename = "./npy/dataByWeek/week" + str(i) + '.npy'
+
+        fineTimeThresholdPruning(i, None)
         
     
-# preProcessing(11, None)
+#fineTimeThresholdPruning(9, None)

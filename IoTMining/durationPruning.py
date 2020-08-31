@@ -10,9 +10,10 @@ from utils import labelSet, timeStampDiff, durationThreshold, basketsKeySet
 from collections import defaultdict
 import numpy as np
 import os
+import time
 
-
-def durationPruning(filename):
+def durationPruning(week, filename):
+    startProcessTime = time.process_time()
     """Return a map of routine items i.e. a baskets for A-priori"""
     """keys of the map are the combinations of dayOfWeek + partitionTimeOfDay i.e. 00, 01, 02...62 """
     # an item is routine if its duration is longer then the time pruning threshold
@@ -20,6 +21,7 @@ def durationPruning(filename):
 
     routineItemsMap = {}
     dataTable = np.load(filename, allow_pickle = True)
+    dataSize = len(dataTable)
 
     for key in basketsKeySet:
         timeStampList = []
@@ -35,7 +37,6 @@ def durationPruning(filename):
                     if row == (endPoint[0]-1) and not lookingForOn:
                         timeStamp = str(dataTable[row][0]).split()
                         timeStampList.append(timeStamp[1])
-                        
                         
                     #looking for ON
                     if elem == dataTable[row][3] and lookingForOn and "ON" == str(dataTable[row][4]):
@@ -58,11 +59,19 @@ def durationPruning(filename):
                 routineItems.append((elem,int(totalDuration)))
                 
         routineItemsMap[key] = routineItems
+    endProcessTime = time.process_time() - startProcessTime
+    print('week:', week, 'excecution time:', endProcessTime) 
+    if not os.path.exists('./ProgOutput/'):
+        os.makedirs('./ProgOutput/')    
+    outFile = open('./ProgOutput/pruneDuration-Measure.txt','a+')
+    outFile.writelines("{}, {}, {}\n".format(week, dataSize, endProcessTime))
+    outFile.close()
     return routineItemsMap
 
 
 
-def upgradedDurationPruning(filename):
+def upgradedDurationPruning(week, filename):
+    startProcessTime = time.process_time()
     """Return a map of routine items i.e. a baskets for A-priori"""
     """keys of the map are the combinations of dayOfWeek + partitionTimeOfDay i.e. 00, 01, 02...62 """
     # an item is routine if its duration is longer then the time pruning threshold
@@ -72,9 +81,9 @@ def upgradedDurationPruning(filename):
     routineItemsMap = defaultdict(list)
     routineItemMapIDOnly = defaultdict(list)
     dataTable = np.load(filename, allow_pickle = True)
+    dataSize = len(dataTable)
     
     for elem in labelSet:
-        routineItems = []
         for i in range(0,7):
             for j in range(0,3):
                 idx = ((dataTable[:,4] == elem) & (dataTable[:,1] == i) & (dataTable[:,2] == j))
@@ -121,9 +130,13 @@ def upgradedDurationPruning(filename):
                     key = str(i) + str(j)        
                     routineItemsMap[key].append((elem,int(totalDuration),str(firstOn),str(lastOff)))
                     routineItemMapIDOnly[key].append(elem)
-             
-               
-            
+    endProcessTime = time.process_time() - startProcessTime
+    print('week:', week, 'excecution time:', endProcessTime) 
+    if not os.path.exists('./ProgOutput/'):
+        os.makedirs('./ProgOutput/')    
+    outFile = open('./ProgOutput/pruneDurationUpgraded-Measure.txt','a+')
+    outFile.writelines("{}, {}, {}\n".format(week, dataSize, endProcessTime))
+    outFile.close()
     return routineItemsMap, routineItemMapIDOnly
             
  
@@ -132,8 +145,8 @@ if __name__ == '__main__':
     weekCount = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
     for i in range (0,weekCount):
         filename = "./npy/dataByWeek/week" + str(i) + '.npy'
-        #table = upgradedDurationPruning(filename) #old version, much slower
-        table1, table2 = upgradedDurationPruning(filename)
+        durationPruning(i, filename) #old version, much slower
+        table1, table2 = upgradedDurationPruning(i, filename)
         currentWeek = '===== Week ' + str(i+1) + ' ====='
         print(currentWeek)
         for key in basketsKeySet:
@@ -155,8 +168,10 @@ if __name__ == '__main__':
 
 
 #test output
-'''
-table = upgradedDurationPruning('./npy/dataByWeek/week6.npy')
-for key in basketsKeySet:
-            print("{} : {}".format(key,table[key]))
-'''
+
+# table = upgradedDurationPruning('./npy/dataByWeek/week11.npy')
+# table = durationPruning('./npy/dataByWeek/week11.npy')
+# '''
+# for key in basketsKeySet:
+#             print("{} : {}".format(key,table[key]))
+# '''
