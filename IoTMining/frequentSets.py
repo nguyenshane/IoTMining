@@ -54,7 +54,7 @@ def findFrequentSets(weeks):
     for id in baskets:
         #print("Basket", baskets[id])
         
-        itemsets, rules = apriori(baskets[id], min_support=0.9, min_confidence=1, max_length=2)
+        itemsets, rules = apriori(baskets[id], min_support=0.5, min_confidence=1, max_length=2)
 
         itemsetsList.append(itemsets)
         
