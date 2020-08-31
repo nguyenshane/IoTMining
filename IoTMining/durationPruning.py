@@ -145,7 +145,8 @@ if __name__ == '__main__':
     weekCount = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
     for i in range (0,weekCount):
         filename = "./npy/dataByWeek/week" + str(i) + '.npy'
-        durationPruning(i, filename) #old version, much slower
+        #uncomment to demonstrate the different between two algorithms
+        #durationPruning(i, filename) #old version, much slower
         table1, table2 = upgradedDurationPruning(i, filename)
         currentWeek = '===== Week ' + str(i+1) + ' ====='
         print(currentWeek)
@@ -169,9 +170,9 @@ if __name__ == '__main__':
 
 #test output
 
-# table = upgradedDurationPruning('./npy/dataByWeek/week11.npy')
+#table = upgradedDurationPruning('./npy/dataByWeek/week11.npy')
 # table = durationPruning('./npy/dataByWeek/week11.npy')
-# '''
-# for key in basketsKeySet:
-#             print("{} : {}".format(key,table[key]))
-# '''
+
+#for key in basketsKeySet:
+    #print("{} : {}".format(key,table[key]))
+

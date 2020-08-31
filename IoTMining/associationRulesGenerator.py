@@ -28,7 +28,7 @@ def assoRulesGenerator():
         assoMap = {}
         for j in range(i, i+4):
             filename = path + 'week' + str(j) + '.npy'
-            table1, table2 = upgradedDurationPruning(filename)
+            table1, table2 = upgradedDurationPruning(j+1,filename)
             #currentWeek = '===== Week ' + str(j) + ' ====='
             #print(currentWeek)
             #for key in basketsKeySet:
