@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+# Research: Incremental Learning from IoT for Smart Home Automation
+# Authors: Nguyen Do, Quan Bach
+# Usage:
+# Import Data
+# By running this file, it will pick up datasets in specified in datasets array,
+# import to numpy array with some filters and then partition into weeks
+
 import os
 import utils
 from datetime import datetime, time, timedelta

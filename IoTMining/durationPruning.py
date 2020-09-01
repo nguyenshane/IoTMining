@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 17 13:35:15 2020
 
-@author: QB
-"""
+# Research: Incremental Learning from IoT for Smart Home Automation
+# Authors: Nguyen Do, Quan Bach
+# Usage:
+# Duration Pruning
+# By running this file, it will pick up datasets in npy/prunedDataByWeek,
+# prune the data based on longer minute time threshold, combine with filtering
+# for ON and OFF events. upgradedDurationPruning() improves the performance by using
+# predefined labelset and numpy filtering.
 
 from utils import labelSet, timeStampDiff, durationThreshold, basketsKeySet
 from collections import defaultdict

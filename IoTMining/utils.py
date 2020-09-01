@@ -1,4 +1,8 @@
-# -*- coding: utf-8 -*-
+# Research: Incremental Learning from IoT for Smart Home Automation
+# Authors: Nguyen Do, Quan Bach
+# Usage:
+# Utils
+# This file contains configurable variables, mapping and common functions
 
 sizeOfSlidingWindow = 4 #the number of weeks in the sliding window for apriori
 timePruningThreshold = 1 # time threshold in minute
