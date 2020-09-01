@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Aug 19 16:09:31 2020
 
-@author: qb
-"""
+# Research: Incremental Learning from IoT for Smart Home Automation
+# Authors: Nguyen Do, Quan Bach
+# Usage:
+# Data Partition
+# By running this file, the dataPartition() function will look into the pickled numpy data
+# in /npy folder and partition data by week to /npy/dataByWeek
+
 import os
 import numpy as np
 import utils
@@ -45,12 +47,6 @@ def dataPartition(filename):
         endDate = dateTup[1]
         weekIndex += 1
         
-        
-        
-        
-    
-    
-
 if __name__ == '__main__':
        
     filename = "./npy/datanpy.npy"
@@ -61,9 +57,6 @@ if __name__ == '__main__':
     dataPartition(filename)
     print("Done")
  
-
-
-
 #quick test here 
 #print("Start date: " + utils.startDate)
 #print("End date: " + getEndDate(utils.startDate))

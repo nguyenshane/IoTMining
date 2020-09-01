@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
+# Research: Incremental Learning from IoT for Smart Home Automation
+# Authors: Nguyen Do, Quan Bach
+# Usage:
+# Time Threshold Pruning
+# By running this file, it will pick up datasets in npy/prunedDataByWeek,
+# prune the data based on minute time threshold, combine with deduplication
+# and filter segments that doesn't have interesting device type to learn
 
 import utils
 import os
@@ -7,7 +14,7 @@ from datetime import timedelta
 import numpy as np
 import time
 
-def fineTimeThresholdPruning(week, dataTable):
+def timeThresholdPruning(week, dataTable):
     startProcessTime = time.process_time()
     if (dataTable is None):
         filename = "./npy/dataByWeek/week" + str(week) + ".npy"
@@ -91,7 +98,7 @@ if __name__ == '__main__':
     for i in range (0, weekCount):
         filename = "./npy/dataByWeek/week" + str(i) + '.npy'
 
-        fineTimeThresholdPruning(i, None)
+        timeThresholdPruning(i, None)
         
     
-#fineTimeThresholdPruning(9, None)
+#timeThresholdPruning(9, None)

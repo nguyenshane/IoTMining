@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Aug 23 15:16:18 2020
 
-@author: Tommy
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 22 13:51:19 2020
-
-@author: Tommy
-"""
+# Research: Incremental Learning from IoT for Smart Home Automation
+# Authors: Nguyen Do, Quan Bach
+# Usage:
+# Heatmap Generator
+# By running this file, it will pick up datasets in npy/prunedDataByWeek,
+# and generate heat maps for analysis purpose
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -68,9 +61,7 @@ if __name__ == "__main__":
 
     #Plot image and overlay colormap
     fig, ax = plt.subplots(1, 1)
-    
-   
-    
+
     for key in locationDict:
         if key in countDict.keys(): 
             Gauss = twoD_Gaussian(x, y, locationDict[key][0] *x.max(), locationDict[key][1] *y.max(), .08*x.max(), .08*y.max())
@@ -81,8 +72,6 @@ if __name__ == "__main__":
                 value = int(((countDict[key]*101)/maxCount)*100)
                 cb = ax.contourf(x, y, Gauss.reshape(x.shape[0], y.shape[1]),  value , cmap=bluecmap)
 
-                
-       
 
     plt.axis('off')
     ax.imshow(I)

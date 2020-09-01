@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 29 16:19:19 2020
 
-@author: QB
-"""
+# Research: Incremental Learning from IoT for Smart Home Automation
+# Authors: Nguyen Do, Quan Bach
+# Usage:
+# Duration Based Association Rules Generator
+# By running rulesGenerator(), this function will get into the imported data, prune in-placed 
+# with upgradedDurationPruning, then runs the apriori algorithm per sliding window 
+# of 4 weeks and generate the rules
 
 from durationPruning import upgradedDurationPruning
 from efficient_apriori import apriori
