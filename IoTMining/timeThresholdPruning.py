@@ -18,11 +18,20 @@ def timeThresholdPruning(week, dataTable):
     startProcessTime = time.process_time()
     if (dataTable is None):
         filename = "./npy/dataByWeek/week" + str(week) + ".npy"
-        dataTable = np.load(filename, allow_pickle = True)
+        try:
+            dataTable = np.load(filename, allow_pickle = True)
+        except:
+            prunedDataTable = np.array([], dtype=object)
+            if not os.path.exists('npy/prunedDataByWeek'):
+                os.makedirs('npy/prunedDataByWeek')
+            np.save('./npy/prunedDataByWeek/week' + str(week), prunedDataTable)
+            return
         
     dataSize = len(dataTable)
     
     prunedDataTable = []
+    if (len(dataTable) == 0):
+        return
     startTime = dataTable[0][:1][0]
 
     dataTableIndex = 0
@@ -65,7 +74,7 @@ def timeThresholdPruning(week, dataTable):
     print('week:', week, 'excecution time:', endProcessTime)
     if not os.path.exists('./ProgOutput/'):
         os.makedirs('./ProgOutput/')    
-    outFile = open('./ProgOutput/pruneFineTimeThreshold-Measure.txt','a+')
+    outFile = open('./ProgOutput/pruneTimeThreshold-Measure.txt','a+')
     outFile.writelines("{}, {}, {}\n".format(week, dataSize, endProcessTime))
     outFile.close()
     print('prunedDataTable', prunedDataTable)
@@ -92,13 +101,13 @@ def pruneDuplication(segment):
     newSegment = onSegment[indices]
     return newSegment
 
-if __name__ == '__main__':
-    path = './npy/dataByWeek/'
-    weekCount = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
-    for i in range (0, weekCount):
-        filename = "./npy/dataByWeek/week" + str(i) + '.npy'
+# if __name__ == '__main__':
+#     path = './npy/dataByWeek/'
+#     weekCount = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
+#     for i in range (0, weekCount):
+#         filename = "./npy/dataByWeek/week" + str(i) + '.npy'
 
-        timeThresholdPruning(i, None)
+#         timeThresholdPruning(i, None)
         
     
-#timeThresholdPruning(9, None)
+timeThresholdPruning(9, None)
