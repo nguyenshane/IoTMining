@@ -1,8 +1,8 @@
-fileID = fopen('./ppRules/ruleSize.txt','r');
+fileID = fopen('./ProgOutput/pruneDuration-Measure.txt','r');
 formatSpec = '%d';
-A = fscanf(fileID,formatSpec);
-x = 1:length(A);
-plot(x,A);
+datacell = textscan(fileID, '%d%f%f', 'Delimiter',',');
+plot(datacell{1},datacell{2})
 title('Size of association rules set over time');
-xlabel('time');
+xlabel('week');
 ylabel('Size');
+
