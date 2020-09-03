@@ -7,6 +7,7 @@ This repo is a research project for the paper Incremental Learning from IoT for 
 
 ## Input:
 - Data is stored in /dataset
+- The full dataset for 36 weeks is located at https://github.com/nguyenshane/IoTMining/raw/master/IoTMining/dataset/data
 
 ## Usage:
 - Execute `importData.py` to generate data and dataByWeek in numpy pickle
