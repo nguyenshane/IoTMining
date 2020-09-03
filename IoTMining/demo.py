@@ -52,7 +52,7 @@ if __name__ == '__main__':
         num = input ("Enter your option : ") 
         if num == '3':
             print('\n'*4)
-            print('\t' + "Have a nice day Mr.Wang ")
+            print('\t' + "Have a nice day!")
             print('\n'*4)
             break
         elif num == '1':
