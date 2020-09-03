@@ -2,7 +2,7 @@
 This repo is a research project for the paper Incremental Learning from IoT for Smart Home Automation
 
 ## Prerequisite / Installation:
-- Python 3.6 or install Anaconda, then import environment.yml to have the recommended environment
+- Python 3.6 or install Anaconda for Python 3.6 (https://docs.anaconda.com/anaconda/user-guide/faq/#anaconda-faq-35), then import environment.yml to have the recommended environment
 - Install efficient apriori library using `pip install efficient-apriori`
 
 ## Input:
