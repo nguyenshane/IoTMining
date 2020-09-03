@@ -19,6 +19,7 @@ plot(datacell1{1},datacell3{3})
 title('Time comparisions between algorithms');
 xlabel('Week');
 ylabel('Time (in seconds)');
+legend('pruneDuration','pruneDurationUpgraded','pruneTimeThreshold');
 hold off 
 
 
