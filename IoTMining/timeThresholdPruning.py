@@ -101,13 +101,13 @@ def pruneDuplication(segment):
     newSegment = onSegment[indices]
     return newSegment
 
-# if __name__ == '__main__':
-#     path = './npy/dataByWeek/'
-#     weekCount = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
-#     for i in range (0, weekCount):
-#         filename = "./npy/dataByWeek/week" + str(i) + '.npy'
+if __name__ == '__main__':
+    path = './npy/dataByWeek/'
+    weekCount = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
+    for i in range (0, weekCount):
+        filename = "./npy/dataByWeek/week" + str(i) + '.npy'
 
-#         timeThresholdPruning(i, None)
+        timeThresholdPruning(i, None)
         
     
-timeThresholdPruning(9, None)
+#timeThresholdPruning(9, None)

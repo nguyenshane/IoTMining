@@ -14,6 +14,7 @@ This repo is a research project for the paper Incremental Learning from IoT for 
 - If pre-process data by `timeThresholdPruning.py`, run `timeThresholdBasedAssociationRulesGenerator.py` to generate the rules
 - If pre-process data by `durationPruning.py`, run `durationBasedAssociationRulesGenerator.py` to generate the rules
 
+
 ## Outputs:
 - All measurements are located in /ProgOutput
 - All activities sets are stored in /ProgOutput

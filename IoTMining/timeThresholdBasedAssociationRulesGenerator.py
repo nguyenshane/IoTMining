@@ -77,24 +77,28 @@ def rulesGenerator():
     if not os.path.exists('./ttRules/'):
             os.makedirs('./ttRules/')
     
+    if not os.path.exists('./npy/demoData/'):
+            os.makedirs('./npy/demoData/')
+    
     ruleSizeFile = open('./ttRules/ruleSize.txt', 'a+')
     for i in range(0, windowCount+1):
+        dataTable = []
         itemsetsList, rulesList, basketsSize = findFrequentSets(tuple(range(i, i+3)))
         outFile = open('./ttRules/f' + str(i) + 't' +str(i+3) + '.txt', 'w')
         outFile.write("size of baskets: " + str(basketsSize))
         outFile.write("\n")
-        for i in range(0, basketsSize):
+        for j in range(0, basketsSize):
             ruleSizeFile.write("\n")
-            outFile.write("date time segment: " + str(rulesList[i][0]) + "\n")
-            outFile.write("size of rule list: " + str(len(rulesList[i][1])))
+            outFile.write("date time segment: " + str(rulesList[j][0]) + "\n")
+            outFile.write("size of rule list: " + str(len(rulesList[j][1])))
             outFile.write("\n")
-            
-            outFile.write(str(rulesList[i]))
+            outFile.write(str(rulesList[j]))
             outFile.write("\n")
             outFile.write("\n")
-            
+            dataTable.append([str(rulesList[j][0]),str(rulesList[j])])
+        np.save('./npy/demoData/set' + str(i), dataTable)
         outFile.close()
-        
+
 rulesGenerator()
         
 
